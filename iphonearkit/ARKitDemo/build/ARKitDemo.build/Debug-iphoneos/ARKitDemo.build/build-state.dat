@@ -1,618 +1,0 @@
-TARKitDemo
-v7
-r0
-t304063358.853189
-cCheck dependencies
-cCpResource build/Debug-iphoneos/ARKitDemo.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/ResourceRules.plist
-cProcessInfoPlistFile /Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/ARKitDemo.app/Info.plist ARKitDemo-Info.plist
-cCompileXIB /Users/scotty/code/iphonearkit/ARKitDemo/MainWindow.xib
-cCopyPNGFile /Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/ARKitDemo.app/location.png location.png
-cProcessPCH /var/folders/qU/qUuXAgn8FqOQghL2b7b2Q++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/ARKitDemo_Prefix-bsplxxjsnqgdkkfuaejbyunrvidy/ARKitDemo_Prefix.pch.gch ARKitDemo_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
-cProcessPCH /var/folders/qU/qUuXAgn8FqOQghL2b7b2Q++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/ARKitDemo_Prefix-eelpjaqlmvltmtghtlgqidutuisr/ARKitDemo_Prefix.pch.gch ARKitDemo_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv6/main.o /Users/scotty/code/iphonearkit/ARKitDemo/main.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv6/ARKitDemoAppDelegate.o /Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARKitDemoAppDelegate.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv6/ARViewController.o /Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv6/ARCoordinate.o /Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARCoordinate.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv6/ARGeoCoordinate.o /Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARGeoCoordinate.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv6/ARGeoViewController.o /Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARGeoViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv7/main.o /Users/scotty/code/iphonearkit/ARKitDemo/main.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv7/ARKitDemoAppDelegate.o /Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARKitDemoAppDelegate.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cLd /Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv6/ARKitDemo normal armv6
-cCompileC build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv7/ARViewController.o /Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv7/ARCoordinate.o /Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARCoordinate.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv7/ARGeoCoordinate.o /Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARGeoCoordinate.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv7/ARGeoViewController.o /Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARGeoViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cLd /Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv7/ARKitDemo normal armv7
-cCreateUniversalBinary /Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/ARKitDemo.app/ARKitDemo normal "armv6 armv7"
-cGenerateDSYMFile /Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/ARKitDemo.app.dSYM /Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/ARKitDemo.app/ARKitDemo
-cProcessProductPackaging "/Users/scotty/Library/MobileDevice/Provisioning Profiles/7F4FBA4B-F62C-41AB-BE3C-5AFD8DD003C2.mobileprovision" /Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/ARKitDemo.app/embedded.mobileprovision
-cTouch /Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/ARKitDemo.app
-cProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/Entitlements.plist /Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo.xcent
-cCodeSign /Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/ARKitDemo.app
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk
-c000000004C4C6D1C0000000000000110
-t1280077084
-s272
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/Entitlements.plist
-c000000004C06E99F00000000000001A7
-t1275521439
-s423
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/ResourceRules.plist
-c000000004C06E99F00000000000001E5
-t1275521439
-s485
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-c000000004C005A1C00000000003B4B70
-t1275091484
-s3885936
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
-c000000004C00634300000000000A9960
-t1275093827
-s694624
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.h
-c000000004C00633A00000000000001AF
-t1275093818
-s431
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
-c000000004C005A45000000000036A640
-t1275091525
-s3581504
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
-c000000004C005A310000000000001355
-t1275091505
-s4949
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.h
-c000000004C006692000000000000017D
-t1275094674
-s381
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/MapKit.framework/MapKit
-c000000004C0066CB000000000025D5C0
-t1275094731
-s2479552
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.h
-c000000004C005C74000000000000007D
-t1275092084
-s125
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
-c000000004C005D9100000000002215A0
-t1275092369
-s2233760
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
-c000000004C00642C000000000000098F
-t1275094060
-s2447
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
-c000000004C0064A60000000002703220
-t1275094182
-s40907296
-
-N/Users/scotty/Library/MobileDevice/Provisioning Profiles/7F4FBA4B-F62C-41AB-BE3C-5AFD8DD003C2.mobileprovision
-c000000004C32310D0000000000001C35
-t1278357773
-s7221
-
-N/Users/scotty/code/iphonearkit/ARKitDemo/ARKitDemo_Prefix.pch
-c000000004C6F6B6400000000000000BB
-t1282370404
-s187
-i<Foundation/Foundation.h>
-i<UIKit/UIKit.h>
-
-N/Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARCoordinate.h
-c000000004C6F6B64000000000000056E
-t1282370404
-s1390
-i<Foundation/Foundation.h>
-i<MapKit/MapKit.h>
-
-N/Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARCoordinate.m
-c000000004C6F6B640000000000000720
-t1282370404
-s1824
-i"ARCoordinate.h"
-
-N/Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARGeoCoordinate.h
-c000000004C6F6B6400000000000002B2
-t1282370404
-s690
-i<Foundation/Foundation.h>
-i"ARCoordinate.h"
-i<CoreLocation/CoreLocation.h>
-
-N/Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARGeoCoordinate.m
-c000000004C6F6B64000000000000071C
-t1282370404
-s1820
-i"ARGeoCoordinate.h"
-
-N/Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARGeoViewController.h
-c000000004C6F6B64000000000000015E
-t1282370404
-s350
-i<Foundation/Foundation.h>
-i"ARViewController.h"
-
-N/Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARGeoViewController.m
-c000000004C6F6B6400000000000002C6
-t1282370404
-s710
-i"ARGeoViewController.h"
-i"ARGeoCoordinate.h"
-
-N/Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARKitDemoAppDelegate.h
-c000000004C6F6B6400000000000001AD
-t1282370404
-s429
-i<UIKit/UIKit.h>
-i"ARGeoViewController.h"
-
-N/Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARKitDemoAppDelegate.m
-c000000004C6F6B6400000000000021B1
-t1282370404
-s8625
-i"ARKitDemoAppDelegate.h"
-i"ARGeoCoordinate.h"
-i<MapKit/MapKit.h>
-
-N/Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARViewController.h
-c000000004C6F6B640000000000000A61
-t1282370404
-s2657
-i<UIKit/UIKit.h>
-i<CoreLocation/CoreLocation.h>
-i"ARCoordinate.h"
-
-N/Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARViewController.m
-c000000004C6F6B640000000000003663
-t1282370404
-s13923
-i"ARViewController.h"
-i<QuartzCore/QuartzCore.h>
-
-N/Users/scotty/code/iphonearkit/ARKitDemo/MainWindow.xib
-c000000004C6F6B640000000000001F24
-t1282370404
-s7972
-
-N/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo.xcent
-t1282370557
-s418
-
-N/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv6/ARCoordinate.o
-t1282370556
-s17652
-
-N/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv6/ARGeoCoordinate.o
-t1282370556
-s14108
-
-N/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv6/ARGeoViewController.o
-t1282370556
-s39276
-
-N/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv6/ARKitDemo
-t1282370557
-s66592
-
-N/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv6/ARKitDemo.LinkFileList
-c000000004C6F6BF9000000000000031A
-t1282370553
-s794
-
-N/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv6/ARKitDemoAppDelegate.o
-t1282370556
-s63940
-
-N/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv6/ARViewController.o
-t1282370556
-s90768
-
-N/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv6/main.o
-t1282370556
-s6444
-
-N/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv7/ARCoordinate.o
-t1282370557
-s16852
-
-N/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv7/ARGeoCoordinate.o
-t1282370557
-s12592
-
-N/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv7/ARGeoViewController.o
-t1282370557
-s39204
-
-N/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv7/ARKitDemo
-t1282370557
-s61296
-
-N/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv7/ARKitDemo.LinkFileList
-c000000004C6F6BF9000000000000031A
-t1282370553
-s794
-
-N/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv7/ARKitDemoAppDelegate.o
-t1282370556
-s62572
-
-N/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv7/ARViewController.o
-t1282370557
-s87252
-
-N/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv7/main.o
-t1282370556
-s6428
-
-N/Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/ARKitDemo.app
-t1282370558
-s374
-
-N/Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/ARKitDemo.app.dSYM
-t1282370557
-s102
-
-N/Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/ARKitDemo.app/ARKitDemo
-t1282370557
-s135024
-
-N/Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/ARKitDemo.app/Info.plist
-t1282370553
-s731
-
-N/Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/ARKitDemo.app/MainWindow.nib
-t1282370554
-s962
-
-N/Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/ARKitDemo.app/PkgInfo
-t1282370553
-s8
-
-N/Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/ARKitDemo.app/ResourceRules.plist
-t1282370554
-s485
-
-N/Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/ARKitDemo.app/embedded.mobileprovision
-t1282370557
-s7221
-
-N/Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/ARKitDemo.app/location.png
-t1282370554
-s351
-
-N/Users/scotty/code/iphonearkit/ARKitDemo/location.png
-c000000004C6F6B640000000000000125
-t1282370404
-s293
-
-N/Users/scotty/code/iphonearkit/ARKitDemo/main.m
-c000000004C6F6B64000000000000015F
-t1282370404
-s351
-i<UIKit/UIKit.h>
-
-N/var/folders/qU/qUuXAgn8FqOQghL2b7b2Q++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/ARKitDemo_Prefix-bsplxxjsnqgdkkfuaejbyunrvidy/ARKitDemo_Prefix.pch.gch
-t1282370555
-s8958612
-
-N/var/folders/qU/qUuXAgn8FqOQghL2b7b2Q++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/ARKitDemo_Prefix-eelpjaqlmvltmtghtlgqidutuisr/ARKitDemo_Prefix.pch.gch
-t1282370556
-s9421460
-
-NARKitDemo-Info.plist
-c000000004C6F6B64000000000000038A
-t1282370404
-s906
-
-CCheck dependencies
-r0
-lSLF07#2@18"Check dependencies304063353#304063353#0(129"[BWARN]warning: building with 'Targeted Device Family' set to iPhone only ('1') not supported with SDK 'Device - iPhone OS 3.2'.1(22@121"warning: building with 'Targeted Device Family' set to iPhone only ('1') not supported with SDK 'Device - iPhone OS 3.2'.304063353#18446744073709551615#0#0(1@0"0(0#1#0"8632838240#0"0#
-
-CCodeSign /Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/ARKitDemo.app
-s304063357.981760
-e304063358.853144
-r1
-xCodeSign
-x/Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/ARKitDemo.app
-lSLF07#2@43"CodeSign build/Debug-iphoneos/ARKitDemo.app304063357#304063358#0(0"0(0#0#75"/Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/ARKitDemo.app8633838592#728"    cd /Users/scotty/code/iphonearkit/ARKitDemo    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    setenv _CODESIGN_ALLOCATE_ /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    /usr/bin/codesign -f -s "iPhone Developer: Scotty Allen (R37G8852BX)" --resource-rules=/Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/ARKitDemo.app/ResourceRules.plist --entitlements /Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo.xcent /Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/ARKitDemo.app0#
-
-CCompileC build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv6/ARCoordinate.o /Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARCoordinate.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s304063356.529855
-e304063356.637763
-r1
-xCompileC
-xbuild/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv6/ARCoordinate.o
-x/Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARCoordinate.m
-xnormal
-xarmv6
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@71"Compile /Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARCoordinate.m304063356#304063356#0(0"0(0#0#63"/Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARCoordinate.m8623040768#1872"    cd /Users/scotty/code/iphonearkit/ARKitDemo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote /Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo-generated-files.hmap -I/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo-own-target-headers.hmap -I/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo-all-target-headers.hmap -iquote /Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo-project-headers.hmap -F/Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos -I/Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/include -I/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/DerivedSources/armv6 -I/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/DerivedSources -include /var/folders/qU/qUuXAgn8FqOQghL2b7b2Q++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/ARKitDemo_Prefix-bsplxxjsnqgdkkfuaejbyunrvidy/ARKitDemo_Prefix.pch -c /Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARCoordinate.m -o /Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv6/ARCoordinate.o0#
-
-CCompileC build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv6/ARGeoCoordinate.o /Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARGeoCoordinate.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s304063356.637868
-e304063356.722691
-r1
-xCompileC
-xbuild/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv6/ARGeoCoordinate.o
-x/Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARGeoCoordinate.m
-xnormal
-xarmv6
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-o/Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARGeoCoordinate.m: In function '-[ARGeoCoordinate calibrateUsingOrigin:]':
-o/Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARGeoCoordinate.m:31: warning: 'getDistanceFrom:' is deprecated (declared at /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CLLocation.h:204)
-lSLF07#2@74"Compile /Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARGeoCoordinate.m304063356#304063356#0(395"/Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARGeoCoordinate.m: In function '-[ARGeoCoordinate calibrateUsingOrigin:]':/Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARGeoCoordinate.m:31: warning: 'getDistanceFrom:' is deprecated (declared at /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CLLocation.h:204)1(22@190"'getDistanceFrom:' is deprecated (declared at /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CLLocation.h:204)304063356#124#271#0(6@66"/Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARGeoCoordinate.m304063204#31#0#31#0#33"'*' is deprecated (declared at *)0(0#0#66"/Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARGeoCoordinate.m8635643136#1878"    cd /Users/scotty/code/iphonearkit/ARKitDemo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote /Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo-generated-files.hmap -I/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo-own-target-headers.hmap -I/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo-all-target-headers.hmap -iquote /Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo-project-headers.hmap -F/Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos -I/Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/include -I/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/DerivedSources/armv6 -I/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/DerivedSources -include /var/folders/qU/qUuXAgn8FqOQghL2b7b2Q++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/ARKitDemo_Prefix-bsplxxjsnqgdkkfuaejbyunrvidy/ARKitDemo_Prefix.pch -c /Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARGeoCoordinate.m -o /Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv6/ARGeoCoordinate.o0#
-
-CCompileC build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv6/ARGeoViewController.o /Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARGeoViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s304063356.722810
-e304063356.836923
-r1
-xCompileC
-xbuild/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv6/ARGeoViewController.o
-x/Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARGeoViewController.m
-xnormal
-xarmv6
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@78"Compile /Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARGeoViewController.m304063356#304063356#0(0"0(0#0#70"/Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARGeoViewController.m8632398784#1886"    cd /Users/scotty/code/iphonearkit/ARKitDemo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote /Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo-generated-files.hmap -I/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo-own-target-headers.hmap -I/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo-all-target-headers.hmap -iquote /Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo-project-headers.hmap -F/Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos -I/Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/include -I/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/DerivedSources/armv6 -I/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/DerivedSources -include /var/folders/qU/qUuXAgn8FqOQghL2b7b2Q++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/ARKitDemo_Prefix-bsplxxjsnqgdkkfuaejbyunrvidy/ARKitDemo_Prefix.pch -c /Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARGeoViewController.m -o /Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv6/ARGeoViewController.o0#
-
-CCompileC build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv6/ARKitDemoAppDelegate.o /Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARKitDemoAppDelegate.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s304063356.263073
-e304063356.529748
-r1
-xCompileC
-xbuild/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv6/ARKitDemoAppDelegate.o
-x/Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARKitDemoAppDelegate.m
-xnormal
-xarmv6
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@79"Compile /Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARKitDemoAppDelegate.m304063356#304063356#0(0"0(0#0#71"/Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARKitDemoAppDelegate.m8635679488#1888"    cd /Users/scotty/code/iphonearkit/ARKitDemo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote /Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo-generated-files.hmap -I/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo-own-target-headers.hmap -I/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo-all-target-headers.hmap -iquote /Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo-project-headers.hmap -F/Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos -I/Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/include -I/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/DerivedSources/armv6 -I/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/DerivedSources -include /var/folders/qU/qUuXAgn8FqOQghL2b7b2Q++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/ARKitDemo_Prefix-bsplxxjsnqgdkkfuaejbyunrvidy/ARKitDemo_Prefix.pch -c /Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARKitDemoAppDelegate.m -o /Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv6/ARKitDemoAppDelegate.o0#
-
-CCompileC build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv6/ARViewController.o /Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s304063356.410453
-e304063356.751589
-r1
-xCompileC
-xbuild/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv6/ARViewController.o
-x/Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARViewController.m
-xnormal
-xarmv6
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@75"Compile /Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARViewController.m304063356#304063356#0(0"0(0#0#67"/Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARViewController.m8631163424#1880"    cd /Users/scotty/code/iphonearkit/ARKitDemo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote /Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo-generated-files.hmap -I/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo-own-target-headers.hmap -I/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo-all-target-headers.hmap -iquote /Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo-project-headers.hmap -F/Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos -I/Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/include -I/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/DerivedSources/armv6 -I/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/DerivedSources -include /var/folders/qU/qUuXAgn8FqOQghL2b7b2Q++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/ARKitDemo_Prefix-bsplxxjsnqgdkkfuaejbyunrvidy/ARKitDemo_Prefix.pch -c /Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARViewController.m -o /Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv6/ARViewController.o0#
-
-CCompileC build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv6/main.o /Users/scotty/code/iphonearkit/ARKitDemo/main.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s304063356.261344
-e304063356.410346
-r1
-xCompileC
-xbuild/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv6/main.o
-x/Users/scotty/code/iphonearkit/ARKitDemo/main.m
-xnormal
-xarmv6
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@55"Compile /Users/scotty/code/iphonearkit/ARKitDemo/main.m304063356#304063356#0(0"0(0#0#47"/Users/scotty/code/iphonearkit/ARKitDemo/main.m8635506560#1848"    cd /Users/scotty/code/iphonearkit/ARKitDemo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote /Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo-generated-files.hmap -I/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo-own-target-headers.hmap -I/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo-all-target-headers.hmap -iquote /Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo-project-headers.hmap -F/Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos -I/Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/include -I/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/DerivedSources/armv6 -I/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/DerivedSources -include /var/folders/qU/qUuXAgn8FqOQghL2b7b2Q++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/ARKitDemo_Prefix-bsplxxjsnqgdkkfuaejbyunrvidy/ARKitDemo_Prefix.pch -c /Users/scotty/code/iphonearkit/ARKitDemo/main.m -o /Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv6/main.o0#
-
-CCompileC build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv7/ARCoordinate.o /Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARCoordinate.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-s304063357.168311
-e304063357.242978
-r1
-xCompileC
-xbuild/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv7/ARCoordinate.o
-x/Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARCoordinate.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@71"Compile /Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARCoordinate.m304063357#304063357#0(0"0(0#0#63"/Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARCoordinate.m8632712608#1872"    cd /Users/scotty/code/iphonearkit/ARKitDemo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote /Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo-generated-files.hmap -I/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo-own-target-headers.hmap -I/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo-all-target-headers.hmap -iquote /Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo-project-headers.hmap -F/Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos -I/Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/include -I/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/DerivedSources/armv7 -I/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/DerivedSources -include /var/folders/qU/qUuXAgn8FqOQghL2b7b2Q++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/ARKitDemo_Prefix-eelpjaqlmvltmtghtlgqidutuisr/ARKitDemo_Prefix.pch -c /Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARCoordinate.m -o /Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv7/ARCoordinate.o0#
-
-CCompileC build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv7/ARGeoCoordinate.o /Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARGeoCoordinate.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-s304063357.243096
-e304063357.321378
-r1
-xCompileC
-xbuild/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv7/ARGeoCoordinate.o
-x/Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARGeoCoordinate.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-o/Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARGeoCoordinate.m: In function '-[ARGeoCoordinate calibrateUsingOrigin:]':
-o/Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARGeoCoordinate.m:31: warning: 'getDistanceFrom:' is deprecated (declared at /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CLLocation.h:204)
-lSLF07#2@74"Compile /Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARGeoCoordinate.m304063357#304063357#0(395"/Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARGeoCoordinate.m: In function '-[ARGeoCoordinate calibrateUsingOrigin:]':/Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARGeoCoordinate.m:31: warning: 'getDistanceFrom:' is deprecated (declared at /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CLLocation.h:204)1(22@190"'getDistanceFrom:' is deprecated (declared at /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CLLocation.h:204)304063357#124#271#0(6@66"/Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARGeoCoordinate.m304063204#31#0#31#0#33"'*' is deprecated (declared at *)0(0#0#66"/Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARGeoCoordinate.m8632503776#1878"    cd /Users/scotty/code/iphonearkit/ARKitDemo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote /Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo-generated-files.hmap -I/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo-own-target-headers.hmap -I/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo-all-target-headers.hmap -iquote /Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo-project-headers.hmap -F/Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos -I/Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/include -I/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/DerivedSources/armv7 -I/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/DerivedSources -include /var/folders/qU/qUuXAgn8FqOQghL2b7b2Q++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/ARKitDemo_Prefix-eelpjaqlmvltmtghtlgqidutuisr/ARKitDemo_Prefix.pch -c /Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARGeoCoordinate.m -o /Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv7/ARGeoCoordinate.o0#
-
-CCompileC build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv7/ARGeoViewController.o /Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARGeoViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-s304063357.321478
-e304063357.414021
-r1
-xCompileC
-xbuild/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv7/ARGeoViewController.o
-x/Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARGeoViewController.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@78"Compile /Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARGeoViewController.m304063357#304063357#0(0"0(0#0#70"/Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARGeoViewController.m8635599680#1886"    cd /Users/scotty/code/iphonearkit/ARKitDemo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote /Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo-generated-files.hmap -I/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo-own-target-headers.hmap -I/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo-all-target-headers.hmap -iquote /Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo-project-headers.hmap -F/Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos -I/Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/include -I/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/DerivedSources/armv7 -I/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/DerivedSources -include /var/folders/qU/qUuXAgn8FqOQghL2b7b2Q++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/ARKitDemo_Prefix-eelpjaqlmvltmtghtlgqidutuisr/ARKitDemo_Prefix.pch -c /Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARGeoViewController.m -o /Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv7/ARGeoViewController.o0#
-
-CCompileC build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv7/ARKitDemoAppDelegate.o /Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARKitDemoAppDelegate.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-s304063356.835653
-e304063356.954830
-r1
-xCompileC
-xbuild/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv7/ARKitDemoAppDelegate.o
-x/Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARKitDemoAppDelegate.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@79"Compile /Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARKitDemoAppDelegate.m304063356#304063356#0(0"0(0#0#71"/Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARKitDemoAppDelegate.m8632736608#1888"    cd /Users/scotty/code/iphonearkit/ARKitDemo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote /Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo-generated-files.hmap -I/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo-own-target-headers.hmap -I/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo-all-target-headers.hmap -iquote /Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo-project-headers.hmap -F/Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos -I/Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/include -I/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/DerivedSources/armv7 -I/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/DerivedSources -include /var/folders/qU/qUuXAgn8FqOQghL2b7b2Q++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/ARKitDemo_Prefix-eelpjaqlmvltmtghtlgqidutuisr/ARKitDemo_Prefix.pch -c /Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARKitDemoAppDelegate.m -o /Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv7/ARKitDemoAppDelegate.o0#
-
-CCompileC build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv7/ARViewController.o /Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-s304063356.954935
-e304063357.168205
-r1
-xCompileC
-xbuild/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv7/ARViewController.o
-x/Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARViewController.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@75"Compile /Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARViewController.m304063356#304063357#0(0"0(0#0#67"/Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARViewController.m8635558144#1880"    cd /Users/scotty/code/iphonearkit/ARKitDemo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote /Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo-generated-files.hmap -I/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo-own-target-headers.hmap -I/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo-all-target-headers.hmap -iquote /Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo-project-headers.hmap -F/Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos -I/Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/include -I/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/DerivedSources/armv7 -I/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/DerivedSources -include /var/folders/qU/qUuXAgn8FqOQghL2b7b2Q++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/ARKitDemo_Prefix-eelpjaqlmvltmtghtlgqidutuisr/ARKitDemo_Prefix.pch -c /Users/scotty/code/iphonearkit/ARKitDemo/Classes/ARViewController.m -o /Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv7/ARViewController.o0#
-
-CCompileC build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv7/main.o /Users/scotty/code/iphonearkit/ARKitDemo/main.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-s304063356.751693
-e304063356.835545
-r1
-xCompileC
-xbuild/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv7/main.o
-x/Users/scotty/code/iphonearkit/ARKitDemo/main.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@55"Compile /Users/scotty/code/iphonearkit/ARKitDemo/main.m304063356#304063356#0(0"0(0#0#47"/Users/scotty/code/iphonearkit/ARKitDemo/main.m8631275392#1848"    cd /Users/scotty/code/iphonearkit/ARKitDemo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote /Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo-generated-files.hmap -I/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo-own-target-headers.hmap -I/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo-all-target-headers.hmap -iquote /Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo-project-headers.hmap -F/Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos -I/Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/include -I/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/DerivedSources/armv7 -I/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/DerivedSources -include /var/folders/qU/qUuXAgn8FqOQghL2b7b2Q++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/ARKitDemo_Prefix-eelpjaqlmvltmtghtlgqidutuisr/ARKitDemo_Prefix.pch -c /Users/scotty/code/iphonearkit/ARKitDemo/main.m -o /Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv7/main.o0#
-
-CCompileXIB /Users/scotty/code/iphonearkit/ARKitDemo/MainWindow.xib
-s304063354.026347
-e304063354.425197
-r1
-xCompileXIB
-x/Users/scotty/code/iphonearkit/ARKitDemo/MainWindow.xib
-lSLF07#2@25"CompileXIB MainWindow.xib304063354#304063354#0(0"0(0#0#55"/Users/scotty/code/iphonearkit/ARKitDemo/MainWindow.xib8635641888#612"    cd /Users/scotty/code/iphonearkit/ARKitDemo    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/ARKitDemo.app/MainWindow.nib /Users/scotty/code/iphonearkit/ARKitDemo/MainWindow.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk0#
-
-CCopyPNGFile /Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/ARKitDemo.app/location.png location.png
-s304063354.027999
-e304063354.262051
-r1
-xCopyPNGFile
-x/Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/ARKitDemo.app/location.png
-xlocation.png
-lSLF07#2@72"CopyPNGFile build/Debug-iphoneos/ARKitDemo.app/location.png location.png304063354#304063354#0(0"0(0#0#53"/Users/scotty/code/iphonearkit/ARKitDemo/location.png8633762816#634"    cd /Users/scotty/code/iphonearkit/ARKitDemo    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/scotty/code/iphonearkit/ARKitDemo/location.png /Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/ARKitDemo.app/location.png0#
-
-CCpResource build/Debug-iphoneos/ARKitDemo.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/ResourceRules.plist
-s304063353.978011
-e304063354.026105
-r1
-xCpResource
-xbuild/Debug-iphoneos/ARKitDemo.app/ResourceRules.plist
-x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/ResourceRules.plist
-lSLF07#2@94"Copy /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/ResourceRules.plist304063353#304063354#0(0"0(0#0#89"/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/ResourceRules.plist8631811200#548"    cd /Users/scotty/code/iphonearkit/ARKitDemo    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/ResourceRules.plist /Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/ARKitDemo.app0#
-
-CCreateUniversalBinary /Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/ARKitDemo.app/ARKitDemo normal "armv6 armv7"
-s304063357.828262
-e304063357.889897
-r1
-xCreateUniversalBinary
-x/Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/ARKitDemo.app/ARKitDemo
-xnormal
-xarmv6 armv7
-lSLF07#2@87"CreateUniversalBinary build/Debug-iphoneos/ARKitDemo.app/ARKitDemo normal "armv6 armv7"304063357#304063357#0(0"0(0#0#52"/Users/scotty/code/iphonearkit/ARKitDemo/armv6 armv78633798208#604"    cd /Users/scotty/code/iphonearkit/ARKitDemo    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /usr/bin/lipo -create /Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv6/ARKitDemo /Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv7/ARKitDemo -output /Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/ARKitDemo.app/ARKitDemo0#
-
-CGenerateDSYMFile /Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/ARKitDemo.app.dSYM /Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/ARKitDemo.app/ARKitDemo
-s304063357.890027
-e304063357.934591
-r1
-xGenerateDSYMFile
-x/Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/ARKitDemo.app.dSYM
-x/Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/ARKitDemo.app/ARKitDemo
-lSLF07#2@101"GenerateDSYMFile build/Debug-iphoneos/ARKitDemo.app.dSYM build/Debug-iphoneos/ARKitDemo.app/ARKitDemo304063357#304063357#0(0"0(0#0#85"/Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/ARKitDemo.app/ARKitDemo8632680992#436"    cd /Users/scotty/code/iphonearkit/ARKitDemo    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/dsymutil /Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/ARKitDemo.app/ARKitDemo -o /Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/ARKitDemo.app.dSYM0#
-
-CLd /Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv6/ARKitDemo normal armv6
-s304063356.836998
-e304063357.678153
-r1
-xLd
-x/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv6/ARKitDemo
-xnormal
-xarmv6
-lSLF07#2@129"Link /Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv6/ARKitDemo304063356#304063357#0(0"0(0#0#0"8632430656#1007"    cd /Users/scotty/code/iphonearkit/ARKitDemo    setenv IPHONEOS_DEPLOYMENT_TARGET 3.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv6 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -L/Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos -F/Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos -filelist /Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv6/ARKitDemo.LinkFileList -dead_strip -miphoneos-version-min=3.2 -framework Foundation -framework UIKit -framework CoreGraphics -framework CoreLocation -framework MapKit -framework QuartzCore -o /Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv6/ARKitDemo0#
-
-CLd /Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv7/ARKitDemo normal armv7
-s304063357.414117
-e304063357.828138
-r1
-xLd
-x/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv7/ARKitDemo
-xnormal
-xarmv7
-lSLF07#2@129"Link /Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv7/ARKitDemo304063357#304063357#0(0"0(0#0#0"8632972096#1007"    cd /Users/scotty/code/iphonearkit/ARKitDemo    setenv IPHONEOS_DEPLOYMENT_TARGET 3.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv7 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -L/Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos -F/Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos -filelist /Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv7/ARKitDemo.LinkFileList -dead_strip -miphoneos-version-min=3.2 -framework Foundation -framework UIKit -framework CoreGraphics -framework CoreLocation -framework MapKit -framework QuartzCore -o /Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/Objects-normal/armv7/ARKitDemo0#
-
-CProcessInfoPlistFile /Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/ARKitDemo.app/Info.plist ARKitDemo-Info.plist
-s304063353.983078
-e304063353.987433
-r1
-xProcessInfoPlistFile
-x/Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/ARKitDemo.app/Info.plist
-xARKitDemo-Info.plist
-lSLF07#2@28"Process ARKitDemo-Info.plist304063353#304063353#0(0"0(0#0#61"/Users/scotty/code/iphonearkit/ARKitDemo/ARKitDemo-Info.plist8631704992#640"    cd /Users/scotty/code/iphonearkit/ARKitDemo    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    builtin-infoPlistUtility ARKitDemo-Info.plist -genpkginfo /Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/ARKitDemo.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile /Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/ARKitDemo.app/ResourceRules.plist -o /Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/ARKitDemo.app/Info.plist0#
-
-CProcessPCH /var/folders/qU/qUuXAgn8FqOQghL2b7b2Q++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/ARKitDemo_Prefix-bsplxxjsnqgdkkfuaejbyunrvidy/ARKitDemo_Prefix.pch.gch ARKitDemo_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
-s304063354.425333
-e304063356.046573
-r1
-xProcessPCH
-x/var/folders/qU/qUuXAgn8FqOQghL2b7b2Q++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/ARKitDemo_Prefix-bsplxxjsnqgdkkfuaejbyunrvidy/ARKitDemo_Prefix.pch.gch
-xARKitDemo_Prefix.pch
-xnormal
-xarmv6
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@31"Precompile ARKitDemo_Prefix.pch304063354#304063356#0(0"0(0#0#61"/Users/scotty/code/iphonearkit/ARKitDemo/ARKitDemo_Prefix.pch8628538176#1742"    cd /Users/scotty/code/iphonearkit/ARKitDemo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote /Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo-generated-files.hmap -I/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo-own-target-headers.hmap -I/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo-all-target-headers.hmap -iquote /Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo-project-headers.hmap -F/Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos -I/Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/include -I/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/DerivedSources/armv6 -I/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/DerivedSources -c /Users/scotty/code/iphonearkit/ARKitDemo/ARKitDemo_Prefix.pch -o /var/folders/qU/qUuXAgn8FqOQghL2b7b2Q++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/ARKitDemo_Prefix-bsplxxjsnqgdkkfuaejbyunrvidy/ARKitDemo_Prefix.pch.gch0#
-
-CProcessPCH /var/folders/qU/qUuXAgn8FqOQghL2b7b2Q++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/ARKitDemo_Prefix-eelpjaqlmvltmtghtlgqidutuisr/ARKitDemo_Prefix.pch.gch ARKitDemo_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
-s304063354.426383
-e304063356.261188
-r1
-xProcessPCH
-x/var/folders/qU/qUuXAgn8FqOQghL2b7b2Q++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/ARKitDemo_Prefix-eelpjaqlmvltmtghtlgqidutuisr/ARKitDemo_Prefix.pch.gch
-xARKitDemo_Prefix.pch
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@31"Precompile ARKitDemo_Prefix.pch304063354#304063356#0(0"0(0#0#61"/Users/scotty/code/iphonearkit/ARKitDemo/ARKitDemo_Prefix.pch8631474816#1742"    cd /Users/scotty/code/iphonearkit/ARKitDemo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote /Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo-generated-files.hmap -I/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo-own-target-headers.hmap -I/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo-all-target-headers.hmap -iquote /Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo-project-headers.hmap -F/Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos -I/Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/include -I/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/DerivedSources/armv7 -I/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/DerivedSources -c /Users/scotty/code/iphonearkit/ARKitDemo/ARKitDemo_Prefix.pch -o /var/folders/qU/qUuXAgn8FqOQghL2b7b2Q++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/ARKitDemo_Prefix-eelpjaqlmvltmtghtlgqidutuisr/ARKitDemo_Prefix.pch.gch0#
-
-CProcessProductPackaging "/Users/scotty/Library/MobileDevice/Provisioning Profiles/7F4FBA4B-F62C-41AB-BE3C-5AFD8DD003C2.mobileprovision" /Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/ARKitDemo.app/embedded.mobileprovision
-s304063357.934688
-e304063357.959747
-r1
-xProcessProductPackaging
-x/Users/scotty/Library/MobileDevice/Provisioning Profiles/7F4FBA4B-F62C-41AB-BE3C-5AFD8DD003C2.mobileprovision
-x/Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/ARKitDemo.app/embedded.mobileprovision
-lSLF07#2@195"ProcessProductPackaging "/Users/scotty/Library/MobileDevice/Provisioning Profiles/7F4FBA4B-F62C-41AB-BE3C-5AFD8DD003C2.mobileprovision" build/Debug-iphoneos/ARKitDemo.app/embedded.mobileprovision304063357#304063357#0(0"0(0#0#100"/Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/ARKitDemo.app/embedded.mobileprovision8628357728#492"    cd /Users/scotty/code/iphonearkit/ARKitDemo    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    <com.apple.tools.product-pkg-utility> "/Users/scotty/Library/MobileDevice/Provisioning Profiles/7F4FBA4B-F62C-41AB-BE3C-5AFD8DD003C2.mobileprovision" -o /Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/ARKitDemo.app/embedded.mobileprovision0#
-
-CProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/Entitlements.plist /Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo.xcent
-s304063357.963761
-e304063357.981681
-r1
-xProcessProductPackaging
-x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/Entitlements.plist
-x/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo.xcent
-lSLF07#2@181"ProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/Entitlements.plist build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo.xcent304063357#304063357#0(0"0(0#0#109"/Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo.xcent8627729344#504"    cd /Users/scotty/code/iphonearkit/ARKitDemo    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    <com.apple.tools.product-pkg-utility> /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/Entitlements.plist -entitlements -format xml -o /Users/scotty/code/iphonearkit/ARKitDemo/build/ARKitDemo.build/Debug-iphoneos/ARKitDemo.build/ARKitDemo.xcent0#
-
-CTouch /Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/ARKitDemo.app
-s304063357.959821
-e304063357.963639
-r1
-xTouch
-x/Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/ARKitDemo.app
-lSLF07#2@81"Touch /Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/ARKitDemo.app304063357#304063357#0(0"0(0#0#0"8622519904#332"    cd /Users/scotty/code/iphonearkit/ARKitDemo    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /usr/bin/touch -c /Users/scotty/code/iphonearkit/ARKitDemo/build/Debug-iphoneos/ARKitDemo.app0#
-
