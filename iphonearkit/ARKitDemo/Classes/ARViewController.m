@@ -30,8 +30,6 @@
 
 @synthesize delegate, locationDelegate, accelerometerDelegate;
 
-@synthesize cameraController;
-
 - (id)init {
 	if (!(self = [super init])) return nil;
 	
@@ -46,18 +44,6 @@
 	_updateTimer = nil;
 	self.updateFrequency = 1 / 20.0;
 	
-#if !TARGET_IPHONE_SIMULATOR
-	
-	self.cameraController = [[[UIImagePickerController alloc] init] autorelease];
-	self.cameraController.sourceType = UIImagePickerControllerSourceTypeCamera;
-	
-	self.cameraController.cameraViewTransform = CGAffineTransformScale(self.cameraController.cameraViewTransform,
-																	   1.13f,
-																	   1.13f);
-	
-	self.cameraController.showsCameraControls = NO;
-	self.cameraController.navigationBarHidden = YES;
-#endif
 	self.scaleViewsBasedOnDistance = NO;
 	self.maximumScaleDistance = 0.0;
 	self.minimumScaleFactor = 1.0;
@@ -411,13 +397,6 @@ NSComparisonResult LocationSortClosestFirst(ARCoordinate *s1, ARCoordinate *s2, 
 }
 
 - (void)viewDidAppear:(BOOL)animated {
-#if !TARGET_IPHONE_SIMULATOR
-	[self.cameraController setCameraOverlayView:ar_overlayView];
-	[self presentModalViewController:self.cameraController animated:NO];
-	
-	[ar_overlayView setFrame:self.cameraController.view.bounds];
-#endif
-	
 	if (!_updateTimer) {
 		_updateTimer = [[NSTimer scheduledTimerWithTimeInterval:self.updateFrequency
 													 target:self

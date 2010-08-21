@@ -25,8 +25,6 @@
 	
 	ARCoordinate *centerCoordinate;
 	
-	UIImagePickerController *cameraController;
-	
 	NSObject<ARViewDelegate> *delegate;
 	NSObject<CLLocationManagerDelegate> *locationDelegate;
 	NSObject<UIAccelerometerDelegate> *accelerometerDelegate;
@@ -88,8 +86,6 @@
 - (CGPoint)pointInView:(UIView *)realityView forCoordinate:(ARCoordinate *)coordinate;
 
 - (BOOL)viewportContainsCoordinate:(ARCoordinate *)coordinate;
-
-@property (nonatomic, retain) UIImagePickerController *cameraController;
 
 @property (nonatomic, assign) NSObject<ARViewDelegate> *delegate;
 @property (nonatomic, assign) NSObject<CLLocationManagerDelegate> *locationDelegate;
