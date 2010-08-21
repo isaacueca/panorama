@@ -15,6 +15,17 @@
 		2899E5220DE3E06400AC0155 /* PanoramaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* PanoramaViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* PanoramaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* PanoramaViewController.m */; };
+		3720440712207F010087A1AB /* PanoramaAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3720440412207F010087A1AB /* PanoramaAudioManager.m */; };
+		3720440812207F010087A1AB /* PanoramaAudioSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3720440612207F010087A1AB /* PanoramaAudioSource.m */; };
+		3720441212207F190087A1AB /* eight.caf in Resources */ = {isa = PBXBuildFile; fileRef = 3720440A12207F190087A1AB /* eight.caf */; };
+		3720441312207F190087A1AB /* five.caf in Resources */ = {isa = PBXBuildFile; fileRef = 3720440B12207F190087A1AB /* five.caf */; };
+		3720441412207F190087A1AB /* four.caf in Resources */ = {isa = PBXBuildFile; fileRef = 3720440C12207F190087A1AB /* four.caf */; };
+		3720441512207F190087A1AB /* one.caf in Resources */ = {isa = PBXBuildFile; fileRef = 3720440D12207F190087A1AB /* one.caf */; };
+		3720441612207F190087A1AB /* seven.caf in Resources */ = {isa = PBXBuildFile; fileRef = 3720440E12207F190087A1AB /* seven.caf */; };
+		3720441712207F190087A1AB /* six.caf in Resources */ = {isa = PBXBuildFile; fileRef = 3720440F12207F190087A1AB /* six.caf */; };
+		3720441812207F190087A1AB /* three.caf in Resources */ = {isa = PBXBuildFile; fileRef = 3720441012207F190087A1AB /* three.caf */; };
+		3720441912207F190087A1AB /* two.caf in Resources */ = {isa = PBXBuildFile; fileRef = 3720441112207F190087A1AB /* two.caf */; };
+		3720442312207F380087A1AB /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3720442212207F380087A1AB /* OpenAL.framework */; };
 		E2844E4F12206E8D00D1F9D0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2844E4E12206E8D00D1F9D0 /* CoreLocation.framework */; };
 		E287B5F5121FB0A70009B026 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E287B5F4121FB0A70009B026 /* 1.jpg */; };
 		E287B608122051030009B026 /* CylindricalScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = E287B607122051030009B026 /* CylindricalScrollView.m */; };
@@ -33,6 +44,19 @@
 		28D7ACF70DDB3853001CB0EB /* PanoramaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PanoramaViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Panorama_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Panorama_Prefix.pch; sourceTree = "<group>"; };
+		3720440312207F010087A1AB /* PanoramaAudioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PanoramaAudioManager.h; path = audio/PanoramaAudioManager.h; sourceTree = "<group>"; };
+		3720440412207F010087A1AB /* PanoramaAudioManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PanoramaAudioManager.m; path = audio/PanoramaAudioManager.m; sourceTree = "<group>"; };
+		3720440512207F010087A1AB /* PanoramaAudioSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PanoramaAudioSource.h; path = audio/PanoramaAudioSource.h; sourceTree = "<group>"; };
+		3720440612207F010087A1AB /* PanoramaAudioSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PanoramaAudioSource.m; path = audio/PanoramaAudioSource.m; sourceTree = "<group>"; };
+		3720440A12207F190087A1AB /* eight.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = eight.caf; path = resources/audio/eight.caf; sourceTree = "<group>"; };
+		3720440B12207F190087A1AB /* five.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = five.caf; path = resources/audio/five.caf; sourceTree = "<group>"; };
+		3720440C12207F190087A1AB /* four.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = four.caf; path = resources/audio/four.caf; sourceTree = "<group>"; };
+		3720440D12207F190087A1AB /* one.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = one.caf; path = resources/audio/one.caf; sourceTree = "<group>"; };
+		3720440E12207F190087A1AB /* seven.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = seven.caf; path = resources/audio/seven.caf; sourceTree = "<group>"; };
+		3720440F12207F190087A1AB /* six.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = six.caf; path = resources/audio/six.caf; sourceTree = "<group>"; };
+		3720441012207F190087A1AB /* three.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = three.caf; path = resources/audio/three.caf; sourceTree = "<group>"; };
+		3720441112207F190087A1AB /* two.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = two.caf; path = resources/audio/two.caf; sourceTree = "<group>"; };
+		3720442212207F380087A1AB /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		8D1107310486CEB800E47090 /* Panorama-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Panorama-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		E2844E4E12206E8D00D1F9D0 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		E287B5F4121FB0A70009B026 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
@@ -49,6 +73,7 @@
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
 				E2844E4F12206E8D00D1F9D0 /* CoreLocation.framework in Frameworks */,
+				3720442312207F380087A1AB /* OpenAL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +83,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				3720440012207EEE0087A1AB /* audio */,
 				1D3623240D0F684500981E51 /* PanoramaAppDelegate.h */,
 				1D3623250D0F684500981E51 /* PanoramaAppDelegate.m */,
 				28D7ACF60DDB3853001CB0EB /* PanoramaViewController.h */,
@@ -100,6 +126,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3720440912207F090087A1AB /* audio */,
 				E287B5F4121FB0A70009B026 /* 1.jpg */,
 				2899E5210DE3E06400AC0155 /* PanoramaViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
@@ -115,8 +142,35 @@
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
 				E2844E4E12206E8D00D1F9D0 /* CoreLocation.framework */,
+				3720442212207F380087A1AB /* OpenAL.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3720440012207EEE0087A1AB /* audio */ = {
+			isa = PBXGroup;
+			children = (
+				3720440312207F010087A1AB /* PanoramaAudioManager.h */,
+				3720440412207F010087A1AB /* PanoramaAudioManager.m */,
+				3720440512207F010087A1AB /* PanoramaAudioSource.h */,
+				3720440612207F010087A1AB /* PanoramaAudioSource.m */,
+			);
+			name = audio;
+			sourceTree = "<group>";
+		};
+		3720440912207F090087A1AB /* audio */ = {
+			isa = PBXGroup;
+			children = (
+				3720440A12207F190087A1AB /* eight.caf */,
+				3720440B12207F190087A1AB /* five.caf */,
+				3720440C12207F190087A1AB /* four.caf */,
+				3720440D12207F190087A1AB /* one.caf */,
+				3720440E12207F190087A1AB /* seven.caf */,
+				3720440F12207F190087A1AB /* six.caf */,
+				3720441012207F190087A1AB /* three.caf */,
+				3720441112207F190087A1AB /* two.caf */,
+			);
+			name = audio;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +218,14 @@
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				2899E5220DE3E06400AC0155 /* PanoramaViewController.xib in Resources */,
 				E287B5F5121FB0A70009B026 /* 1.jpg in Resources */,
+				3720441212207F190087A1AB /* eight.caf in Resources */,
+				3720441312207F190087A1AB /* five.caf in Resources */,
+				3720441412207F190087A1AB /* four.caf in Resources */,
+				3720441512207F190087A1AB /* one.caf in Resources */,
+				3720441612207F190087A1AB /* seven.caf in Resources */,
+				3720441712207F190087A1AB /* six.caf in Resources */,
+				3720441812207F190087A1AB /* three.caf in Resources */,
+				3720441912207F190087A1AB /* two.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,6 +240,8 @@
 				1D3623260D0F684500981E51 /* PanoramaAppDelegate.m in Sources */,
 				28D7ACF80DDB3853001CB0EB /* PanoramaViewController.m in Sources */,
 				E287B608122051030009B026 /* CylindricalScrollView.m in Sources */,
+				3720440712207F010087A1AB /* PanoramaAudioManager.m in Sources */,
+				3720440812207F010087A1AB /* PanoramaAudioSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
