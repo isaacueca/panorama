@@ -11,10 +11,13 @@
 #import <CoreLocation/CoreLocation.h>
 #import "PanoramaAudioManager.h"
 
+@class CylindricalScrollView;
+
 @interface PanoramaViewController : UIViewController <UIAccelerometerDelegate, CLLocationManagerDelegate> {
   CLLocationManager *locationManager;
   UILabel *headingLabel;
   PanoramaAudioManager *audioManager;
+  CylindricalScrollView *scrollView;
 }
 
 @property (nonatomic, retain) PanoramaAudioManager *audioManager;
