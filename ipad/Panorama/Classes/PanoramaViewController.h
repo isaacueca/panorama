@@ -9,11 +9,14 @@
 #import <UIKit/UIKit.h>
 
 #import <CoreLocation/CoreLocation.h>
+#import "PanoramaAudioManager.h"
 
 @interface PanoramaViewController : UIViewController <UIAccelerometerDelegate, CLLocationManagerDelegate> {
   CLLocationManager *locationManager;
   UILabel *headingLabel;
+  PanoramaAudioManager *audioManager;
 }
 
+@property (nonatomic, retain) PanoramaAudioManager *audioManager;
 @end
 

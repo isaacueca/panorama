@@ -22,15 +22,18 @@
 
 @synthesize locationManager;
 @synthesize headingLabel;
+@synthesize audioManager;
 
 - (void)dealloc {
   self.locationManager = nil;
   self.headingLabel = nil;
+  self.audioManager = nil;
   [super dealloc];
 }
 
 - (void)loadView {
   self.view = [[UIView alloc] initWithFrame:CGRectZero];
+  self.audioManager = [[ PanoramaAudioManager alloc ] init ];
   CylindricalScrollView *scrollView = [[CylindricalScrollView alloc]
                                        initWithFrame:CGRectMake(0, 0, 1024, 768)];
   self.headingLabel = [[[UILabel alloc] initWithFrame:CGRectMake(400, 0, 200, 30)] autorelease];
