@@ -11,11 +11,21 @@
 
 @interface PanoramaViewController ()
 
+@property(nonatomic, retain) CLLocationManager *locationManager;
+@property(nonatomic, retain) UILabel *headingLabel;
+
+- (void)startListening;
+
 @end
 
 @implementation PanoramaViewController
 
+@synthesize locationManager;
+@synthesize headingLabel;
+
 - (void)dealloc {
+  self.locationManager = nil;
+  self.headingLabel = nil;
   [super dealloc];
 }
 
@@ -23,7 +33,11 @@
   self.view = [[UIView alloc] initWithFrame:CGRectZero];
   CylindricalScrollView *scrollView = [[CylindricalScrollView alloc]
                                        initWithFrame:CGRectMake(0, 0, 1024, 768)];
+  self.headingLabel = [[[UILabel alloc] initWithFrame:CGRectMake(400, 0, 200, 30)] autorelease];
+  self.headingLabel.text = @"Heading:";
   [self.view addSubview:scrollView];
+  [self.view addSubview:self.headingLabel];
+  [self startListening];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
@@ -33,6 +47,26 @@
 - (void)didReceiveMemoryWarning {
   // TODO(scotty): implement this
   [super didReceiveMemoryWarning];
+}
+
+- (void)startListening {
+	// Start taking heading readings.
+
+	if (!self.locationManager) {
+		self.locationManager = [[[CLLocationManager alloc] init] autorelease];
+
+		//we want every move.
+		self.locationManager.headingFilter = kCLHeadingFilterNone;
+		self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+
+		[self.locationManager startUpdatingHeading];
+    self.locationManager.delegate = self;
+	}
+}
+
+- (void)locationManager:(CLLocationManager *)manager didUpdateHeading:(CLHeading *)newHeading {
+  NSLog(@"New heading: %f", [newHeading magneticHeading]);
+  self.headingLabel.text = [NSString stringWithFormat:@"Heading: %f", [newHeading magneticHeading]];
 }
 
 @end

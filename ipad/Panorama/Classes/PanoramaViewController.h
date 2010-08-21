@@ -11,6 +11,8 @@
 #import <CoreLocation/CoreLocation.h>
 
 @interface PanoramaViewController : UIViewController <UIAccelerometerDelegate, CLLocationManagerDelegate> {
+  CLLocationManager *locationManager;
+  UILabel *headingLabel;
 }
 
 @end
