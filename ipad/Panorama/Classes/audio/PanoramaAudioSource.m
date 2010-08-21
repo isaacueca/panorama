@@ -9,9 +9,18 @@
 #import "PanoramaAudioSource.h"
 #import "OpenALSupport.h"
 
+#define kAudioSourceRadius 1.0f
+
 @implementation PanoramaAudioSource
 @synthesize sourceVolume;
+@synthesize fileName, extension;
+@synthesize angle;
 
+-(void)dealloc {
+	[ fileName release ], fileName = nil;
+	[ extension release ], extension = nil;
+	[ super dealloc ];
+}
 - (void) initBuffer {
 	ALenum  error = AL_NO_ERROR;
 	ALenum  format;
@@ -21,7 +30,7 @@
 	NSBundle*				bundle = [NSBundle mainBundle];
 	
 	// get some audio data from a wave file
-	CFURLRef fileURL = (CFURLRef)[[NSURL fileURLWithPath:[bundle pathForResource:@"eight" ofType:@"caf"]] retain];
+	CFURLRef fileURL = (CFURLRef)[[NSURL fileURLWithPath:[bundle pathForResource:self.fileName ofType:self.extension]] retain];
 	
 	if (fileURL) {	
 		_data = MyGetOpenALAudioData(fileURL, &size, &format, &freq);
@@ -123,4 +132,11 @@
 	alSourcefv(_source, AL_POSITION, _sourcePos);
 }
 
+-(void)setAngle:(float)_angle {
+	angle = _angle*M_PI/180.0f;
+	
+	self.sourcePos[0] = kAudioSourceRadius*cos(angle);
+	self.sourcePos[1] = kAudioSourceRadius*sin(angle);
+	self.sourcePos[2] = 0.0f;
+}
 @end

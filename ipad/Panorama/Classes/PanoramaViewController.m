@@ -34,6 +34,7 @@
 - (void)loadView {
   self.view = [[UIView alloc] initWithFrame:CGRectZero];
   self.audioManager = [[ PanoramaAudioManager alloc ] init ];
+  [ self.audioManager loadTestSounds ];
   CylindricalScrollView *scrollView = [[CylindricalScrollView alloc]
                                        initWithFrame:CGRectMake(0, 0, 1024, 768)];
   self.headingLabel = [[[UILabel alloc] initWithFrame:CGRectMake(400, 0, 200, 30)] autorelease];
@@ -41,6 +42,7 @@
   [self.view addSubview:scrollView];
   [self.view addSubview:self.headingLabel];
   [self startListening];
+  [ self.audioManager startSounds ];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
@@ -70,6 +72,7 @@
 - (void)locationManager:(CLLocationManager *)manager didUpdateHeading:(CLHeading *)newHeading {
   NSLog(@"New heading: %f", [newHeading magneticHeading]);
   self.headingLabel.text = [NSString stringWithFormat:@"Heading: %f", [newHeading magneticHeading]];
+  [ self.audioManager updateHeading:[ newHeading magneticHeading ]];
 }
 
 @end

@@ -17,13 +17,18 @@
 	void	*_data;
 	float	_sourcePos[3];
 	ALfloat	_sourceVolume;	
+	NSString *fileName;
+	NSString *extension;
 }
 
+-(void)initSource;
 - (void)startSound;
 - (void)stopSound;
 
-
-@property			float* sourcePos; // The coordinates of the sound source
-@property			ALfloat sourceVolume; // The coordinates of the sound source
+@property float* sourcePos; // The coordinates of the sound source
+@property ALfloat sourceVolume; // The coordinates of the sound source
+@property float	angle;
+@property (nonatomic, retain) NSString *fileName;
+@property (nonatomic, retain) NSString *extension;
 
 @end

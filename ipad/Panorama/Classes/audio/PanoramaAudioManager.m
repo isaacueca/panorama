@@ -51,6 +51,7 @@ void interruptionListener(	void *	inClientData,
 -(id)init {
 	if(self = [ super init ]) {
 		self.audioSources = [ NSMutableArray array ];
+		[ self initOpenAL ];
 	}
 	return self;
 }
@@ -70,7 +71,14 @@ void interruptionListener(	void *	inClientData,
 }
 
 -(void)loadTestSounds {
-	
+	for(int i = 0; i< 7; i++) {
+		PanoramaAudioSource *source = [[ PanoramaAudioSource alloc ] init ];
+		source.angle = i*45;
+		source.fileName = [ NSString stringWithFormat:@"%i", (i+1) ];
+		source.extension = @"caf";
+		[ self.audioSources addObject:source];
+		[ source release ];
+	}
 }
 
 - (void)initOpenAL {
