@@ -7,55 +7,32 @@
 //
 
 #import "PanoramaViewController.h"
+#import "CylindricalScrollView.h"
+
+@interface PanoramaViewController ()
+
+@end
 
 @implementation PanoramaViewController
 
-
-/*
-// The designated initializer. Override to perform setup that is required before the view is loaded.
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    if ((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])) {
-        // Custom initialization
-    }
-    return self;
+- (void)dealloc {
+  [super dealloc];
 }
-*/
 
-/*
-// Implement loadView to create a view hierarchy programmatically, without using a nib.
 - (void)loadView {
+  self.view = [[UIView alloc] initWithFrame:CGRectZero];
+  CylindricalScrollView *scrollView = [[CylindricalScrollView alloc]
+                                       initWithFrame:CGRectMake(0, 0, 1024, 768)];
+  [self.view addSubview:scrollView];
 }
-*/
 
-
-/*
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad {
-    [super viewDidLoad];
-}
-*/
-
-
-// Override to allow orientations other than the default portrait orientation.
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     return YES;
 }
 
 - (void)didReceiveMemoryWarning {
-	// Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
-	
-	// Release any cached data, images, etc that aren't in use.
-}
-
-- (void)viewDidUnload {
-	// Release any retained subviews of the main view.
-	// e.g. self.myOutlet = nil;
-}
-
-
-- (void)dealloc {
-    [super dealloc];
+  // TODO(scotty): implement this
+  [super didReceiveMemoryWarning];
 }
 
 @end
