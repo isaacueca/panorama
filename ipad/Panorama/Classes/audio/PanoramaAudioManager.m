@@ -79,6 +79,7 @@ void interruptionListener(	void *	inClientData,
 	}
 	return self;
 }
+
 -(void)dealloc {
 	[ audioSources release ], audioSources = nil;
 	[ super dealloc ];
@@ -126,10 +127,10 @@ void interruptionListener(	void *	inClientData,
 
 -(void)startSounds {
 	started = YES;
-	[ self initOpenAL ];
-	for(PanoramaAudioSource *source in self.audioSources) {
-		[ source startSound ];
-	}
+//	[ self initOpenAL ];
+//	for(PanoramaAudioSource *source in self.audioSources) {
+//		[ source startSound ];
+//	}
 }
 
 - (void)teardownOpenAL {
@@ -183,8 +184,17 @@ void interruptionListener(	void *	inClientData,
 		float volume = 0.0;
 		if(distance > 0.0f) {
 			volume = distance*5.0f;
+			if(source.isStarted == NO) {
+				[ source startSound ];
+			}
+			source.volume = volume;
 		}
-		source.volume = volume;
+		else {
+			if(source.isStarted == YES) {
+				source.volume = volume;
+				[ source stopSound ];
+			}
+		}
 	}
 }
 

@@ -16,6 +16,7 @@
 @synthesize fileName, extension;
 @synthesize angle;
 @synthesize volume;
+@synthesize isStarted;
 
 -(void)dealloc {
 	[ fileName release ], fileName = nil;
@@ -79,6 +80,7 @@
 }
 
 - (void)startSound {
+	
 	ALenum error;
 	// Create some OpenAL Buffer Objects
 	alGenBuffers(1, &_buffer);
@@ -103,6 +105,7 @@
 	if((error = alGetError()) != AL_NO_ERROR) {
 		printf("error starting source: %x\n", error);
 	}
+	isStarted = YES;
 }
 
 - (void)stopSound {
@@ -119,6 +122,7 @@
     alDeleteSources(1, &_source);
 	// Delete the Buffers
     alDeleteBuffers(1, &_buffer);	
+	isStarted = NO;
 }
 
 - (float*)sourcePos {

@@ -20,6 +20,7 @@
 	ALfloat	_sourceVolume;	
 	NSString *fileName;
 	NSString *extension;
+	BOOL isStarted;
 }
 
 -(void)initSource;
@@ -32,5 +33,6 @@
 @property (nonatomic, retain) NSString *fileName;
 @property (nonatomic, retain) NSString *extension;
 @property float volume;
+@property BOOL isStarted;
 
 @end
