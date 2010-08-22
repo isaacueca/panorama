@@ -9,8 +9,8 @@
 #import "PanoramaViewController.h"
 #import "CylindricalScrollView.h"
 
-double FRAME_RATE = 40.0;
-double EASING = 7.0;
+double FRAME_RATE = 60.0;
+double EASING = 10.0;
 
 @interface PanoramaViewController ()
 
