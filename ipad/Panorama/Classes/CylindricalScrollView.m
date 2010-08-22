@@ -66,6 +66,7 @@ float SCREEN_WIDTH = 1024.0;
   NSString *imageName = [self.imageNames objectAtIndex:currImageIndex];
   NSLog(@"loading image %@", imageName);
   imageView.image = [UIImage imageNamed:imageName];
+  imageView.opaque = NO;
   [self.imageViews replaceObjectAtIndex:currImageIndex withObject:imageView];
   [self addSubview:imageView];
 }
