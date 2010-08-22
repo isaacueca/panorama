@@ -128,6 +128,10 @@ double EASING = 5.0;
   [ self.audioManager updateHeading:self.lastReportedHeading];
 }
 
+- (BOOL)locationManagerShouldDisplayHeadingCalibration:(CLLocationManager *)manager {
+  return YES;
+}
+
 - (double)circularDifferenceBetween:(double)firstVal and:(double)secondVal withMax:(double)max {
   double result = fmod(secondVal - firstVal, max);
   if (result > max / 2.0) {
