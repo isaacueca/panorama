@@ -77,7 +77,7 @@ double EASING = 5.0;
   
   self.headingLabel = [[[UILabel alloc] initWithFrame:CGRectMake(400, 0, 200, 30)] autorelease];
   self.headingLabel.text = @"Heading:";
-  [self.view addSubview:self.headingLabel];
+  //[self.view addSubview:self.headingLabel];
 
   updateTimer = [[NSTimer scheduledTimerWithTimeInterval:1/FRAME_RATE
                                                   target:self
