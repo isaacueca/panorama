@@ -80,49 +80,63 @@
 }
 
 - (void)startSound {
-	
-	ALenum error;
-	// Create some OpenAL Buffer Objects
-	alGenBuffers(1, &_buffer);
-	if((error = alGetError()) != AL_NO_ERROR) {
-		printf("Error Generating Buffers: %x", error);
-		exit(1);
-	}
-	
-	// Create some OpenAL Source Objects
-	alGenSources(1, &_source);
-	if(alGetError() != AL_NO_ERROR)  {
-		printf("Error generating sources! %x\n", error);
-		exit(1);
-	}
-	
-	[self initBuffer];	
-	[self initSource];
-
-	printf("Start!\n");
-	// Begin playing our source file
-	alSourcePlay(_source);
-	if((error = alGetError()) != AL_NO_ERROR) {
-		printf("error starting source: %x\n", error);
-	}
 	isStarted = YES;
+	NSString *filePath = [[NSBundle mainBundle] pathForResource:self.fileName ofType:self.extension];
+
+	NSURL *clipURL = [[NSURL alloc] initFileURLWithPath:filePath];
+	player = [[AVAudioPlayer alloc] initWithContentsOfURL: clipURL error: nil];
+	[clipURL release];
+	[player prepareToPlay];
+	[player setVolume: 0.0];
+	[player play];
+	player.numberOfLoops = -1;
+	
+//	ALenum error;
+//	// Create some OpenAL Buffer Objects
+//	alGenBuffers(1, &_buffer);
+//	if((error = alGetError()) != AL_NO_ERROR) {
+//		printf("Error Generating Buffers: %x", error);
+//		exit(1);
+//	}
+//	
+//	// Create some OpenAL Source Objects
+//	alGenSources(1, &_source);
+//	if(alGetError() != AL_NO_ERROR)  {
+//		printf("Error generating sources! %x\n", error);
+//		exit(1);
+//	}
+//	
+//	[self initBuffer];	
+//	[self initSource];
+//
+	printf("Start!\n");
+//	// Begin playing our source file
+//	alSourcePlay(_source);
+//	if((error = alGetError()) != AL_NO_ERROR) {
+//		printf("error starting source: %x\n", error);
+//	}
+//	self.volume = 0.0f;
+	
+
 }
 
 - (void)stopSound {
-	ALenum error;
-	
-	printf("Stop!!\n");
-	// Stop playing our source file
-	alSourceStop(_source);
-	if((error = alGetError()) != AL_NO_ERROR) {
-		printf("error stopping source: %x\n", error);
-	}
-	
-	// Delete the Sources
-    alDeleteSources(1, &_source);
-	// Delete the Buffers
-    alDeleteBuffers(1, &_buffer);	
+	if(player != nil) [ player stop ];
+	player = nil;
 	isStarted = NO;
+//	ALenum error;
+//	
+	printf("Stop!!\n");
+//	// Stop playing our source file
+//	alSourceStop(_source);
+//	if((error = alGetError()) != AL_NO_ERROR) {
+//		printf("error stopping source: %x\n", error);
+//	}
+//	
+//	// Delete the Sources
+//    alDeleteSources(1, &_source);
+//	// Delete the Buffers
+//    alDeleteBuffers(1, &_buffer);	
 }
 
 - (float*)sourcePos {
@@ -148,6 +162,8 @@
 
 -(void)setVolume:(float)_volume {
 //	NSLog(@"setting gain to %2.2f", _volume);
-	alSourcef(_source, AL_GAIN, _volume);
+	[player setVolume: (_volume*7.0f)];
+
+//	alSourcef(_source, AL_GAIN, _volume);
 }
 @end

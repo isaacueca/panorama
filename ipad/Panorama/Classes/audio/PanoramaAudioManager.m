@@ -59,23 +59,23 @@ void interruptionListener(	void *	inClientData,
 		// will be set by the view
 		self.audioSources = [ NSMutableArray array ];
 		
-		// setup our audio session
-		OSStatus result = AudioSessionInitialize(NULL, NULL, interruptionListener, self);
-		if (result) printf("Error initializing audio session! %d\n", (int)result);
-		else {
-			UInt32 category = kAudioSessionCategory_AmbientSound;
-			result = AudioSessionSetProperty(kAudioSessionProperty_AudioCategory, sizeof(category), &category);
-			if (result) printf("Error setting audio session category! %d\n", (int)result);
-			else {
-				result = AudioSessionSetActive(true);
-				if (result) printf("Error setting audio session active! %d\n", (int)result);
-			}
-		}
-		
-		_wasInterrupted = NO;
-		
-		// Initialize our OpenAL environment
-		[self initOpenAL];
+//		// setup our audio session
+//		OSStatus result = AudioSessionInitialize(NULL, NULL, interruptionListener, self);
+//		if (result) printf("Error initializing audio session! %d\n", (int)result);
+//		else {
+//			UInt32 category = kAudioSessionCategory_AmbientSound;
+//			result = AudioSessionSetProperty(kAudioSessionProperty_AudioCategory, sizeof(category), &category);
+//			if (result) printf("Error setting audio session category! %d\n", (int)result);
+//			else {
+//				result = AudioSessionSetActive(true);
+//				if (result) printf("Error setting audio session active! %d\n", (int)result);
+//			}
+//		}
+//		
+//		_wasInterrupted = NO;
+//		
+//		// Initialize our OpenAL environment
+//		[self initOpenAL];
 		self.listenerPos[0] = 0.0f;
 		self.listenerPos[1] = 0.0f;
 		self.listenerPos[2] = 0.0f;
@@ -85,6 +85,7 @@ void interruptionListener(	void *	inClientData,
 
 -(void)dealloc {
 	[ audioSources release ], audioSources = nil;
+	[ self tearDown ];
 	[ super dealloc ];
 }
 
@@ -98,11 +99,36 @@ void interruptionListener(	void *	inClientData,
 }
 
 -(void)loadTestSounds {
+	
 	for(int i = 0; i< 7; i++) {
 		PanoramaAudioSource *source = [[ PanoramaAudioSource alloc ] init ];
 		source.angle = i*45;
-		source.fileName = [ NSString stringWithFormat:@"%i", (i+1) ];
-		source.extension = @"caf";
+//		if(i==0) {
+//			source.fileName = @"leeight";
+//			source.extension = @"caf";
+//		}
+//		else if(i==1) {
+//			source.fileName = @"leseven";
+//			source.extension = @"caf";
+//		}
+		if(i==2) {
+			source.angle = 305;
+			source.fileName = @"Italy_01";
+			source.extension = @"caf";
+		}
+		else if(i==3) {
+			source.angle = 100;
+			source.fileName = @"Spain_01";
+			source.extension = @"caf";
+		}
+//		else if(i==4) {
+//			source.fileName = @"Portugal";
+//			source.extension = @"caf";
+//		}
+//		else {
+//			source.fileName = [ NSString stringWithFormat:@"%i", (i+1) ];
+//			source.extension = @"caf";
+//		}
 		[ self.audioSources addObject:source];
 		[ source release ];
 	}
@@ -130,6 +156,11 @@ void interruptionListener(	void *	inClientData,
 
 -(void)startSounds {
 	started = YES;
+	for(PanoramaAudioSource *source in self.audioSources) {
+		if(!source.isStarted)
+			[ source startSound ];
+	}
+	
 }
 
 - (void)teardownOpenAL {
@@ -184,16 +215,12 @@ void interruptionListener(	void *	inClientData,
 		float volume = 0.0;
 		if(distance > 0.0f) {
 			volume = distance*5.0f;
-			if(source.isStarted == NO) {
-				[ source startSound ];
-			}
+			//if(!source.isStarted) [ source startSound ];
 			source.volume = volume;
 		}
 		else {
-			if(source.isStarted == YES) {
-				source.volume = volume;
-				[ source stopSound ];
-			}
+//			if(source.isStarted) [ source stopSound ];
+			source.volume = volume;
 		}
 	}
 }

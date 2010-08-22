@@ -9,6 +9,9 @@
 #import <Foundation/Foundation.h>
 #import <OpenAL/al.h>
 #import <OpenAL/alc.h>
+#import <AVFoundation/AVFoundation.h>
+#import <AudioToolbox/AudioToolbox.h>
+#import <MediaPlayer/MediaPlayer.h>
 
 @interface PanoramaAudioSource : NSObject {
 	float	angle;
@@ -21,6 +24,7 @@
 	NSString *fileName;
 	NSString *extension;
 	BOOL isStarted;
+	AVAudioPlayer *player;
 }
 
 -(void)initSource;

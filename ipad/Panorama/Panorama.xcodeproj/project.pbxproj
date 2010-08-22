@@ -26,6 +26,13 @@
 		3720452D1220995D0087A1AB /* 5.caf in Resources */ = {isa = PBXBuildFile; fileRef = 372045261220995D0087A1AB /* 5.caf */; };
 		3720452E1220995D0087A1AB /* 6.caf in Resources */ = {isa = PBXBuildFile; fileRef = 372045271220995D0087A1AB /* 6.caf */; };
 		3720452F1220995D0087A1AB /* 7.caf in Resources */ = {isa = PBXBuildFile; fileRef = 372045281220995D0087A1AB /* 7.caf */; };
+		379EC6221221BF100089AD85 /* Italy_01.caf in Resources */ = {isa = PBXBuildFile; fileRef = 379EC61A1221BF100089AD85 /* Italy_01.caf */; };
+		379EC6231221BF100089AD85 /* leeight.caf in Resources */ = {isa = PBXBuildFile; fileRef = 379EC61B1221BF100089AD85 /* leeight.caf */; };
+		379EC6241221BF100089AD85 /* leseven.caf in Resources */ = {isa = PBXBuildFile; fileRef = 379EC61C1221BF100089AD85 /* leseven.caf */; };
+		379EC6261221BF100089AD85 /* Portugal.caf in Resources */ = {isa = PBXBuildFile; fileRef = 379EC61E1221BF100089AD85 /* Portugal.caf */; };
+		379EC6281221BF100089AD85 /* Spain_01.caf in Resources */ = {isa = PBXBuildFile; fileRef = 379EC6201221BF100089AD85 /* Spain_01.caf */; };
+		379EC69A1221C48C0089AD85 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 379EC6991221C48B0089AD85 /* AVFoundation.framework */; };
+		379EC6A61221C4E70089AD85 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 379EC6A51221C4E70089AD85 /* MediaPlayer.framework */; };
 		E2844E4F12206E8D00D1F9D0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2844E4E12206E8D00D1F9D0 /* CoreLocation.framework */; };
 		E28450D212219F4C00D1F9D0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E28450D112219F4C00D1F9D0 /* QuartzCore.framework */; };
 		E28451341221A8D300D1F9D0 /* AA_01.png in Resources */ = {isa = PBXBuildFile; fileRef = E28451191221A8D300D1F9D0 /* AA_01.png */; };
@@ -86,6 +93,13 @@
 		372045261220995D0087A1AB /* 5.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = 5.caf; path = resources/audio/5.caf; sourceTree = "<group>"; };
 		372045271220995D0087A1AB /* 6.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = 6.caf; path = resources/audio/6.caf; sourceTree = "<group>"; };
 		372045281220995D0087A1AB /* 7.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = 7.caf; path = resources/audio/7.caf; sourceTree = "<group>"; };
+		379EC61A1221BF100089AD85 /* Italy_01.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Italy_01.caf; path = resources/audio/Italy_01.caf; sourceTree = "<group>"; };
+		379EC61B1221BF100089AD85 /* leeight.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = leeight.caf; path = resources/audio/leeight.caf; sourceTree = "<group>"; };
+		379EC61C1221BF100089AD85 /* leseven.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = leseven.caf; path = resources/audio/leseven.caf; sourceTree = "<group>"; };
+		379EC61E1221BF100089AD85 /* Portugal.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Portugal.caf; path = resources/audio/Portugal.caf; sourceTree = "<group>"; };
+		379EC6201221BF100089AD85 /* Spain_01.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Spain_01.caf; path = resources/audio/Spain_01.caf; sourceTree = "<group>"; };
+		379EC6991221C48B0089AD85 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		379EC6A51221C4E70089AD85 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		8D1107310486CEB800E47090 /* Panorama-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Panorama-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		E2844E4E12206E8D00D1F9D0 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		E28450D112219F4C00D1F9D0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -133,6 +147,8 @@
 				3720442312207F380087A1AB /* OpenAL.framework in Frameworks */,
 				37204506122094CC0087A1AB /* AudioToolbox.framework in Frameworks */,
 				E28450D212219F4C00D1F9D0 /* QuartzCore.framework in Frameworks */,
+				379EC69A1221C48C0089AD85 /* AVFoundation.framework in Frameworks */,
+				379EC6A61221C4E70089AD85 /* MediaPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +247,8 @@
 				3720442212207F380087A1AB /* OpenAL.framework */,
 				37204505122094CC0087A1AB /* AudioToolbox.framework */,
 				E28450D112219F4C00D1F9D0 /* QuartzCore.framework */,
+				379EC6991221C48B0089AD85 /* AVFoundation.framework */,
+				379EC6A51221C4E70089AD85 /* MediaPlayer.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -250,6 +268,11 @@
 		3720440912207F090087A1AB /* audio */ = {
 			isa = PBXGroup;
 			children = (
+				379EC61A1221BF100089AD85 /* Italy_01.caf */,
+				379EC61B1221BF100089AD85 /* leeight.caf */,
+				379EC61C1221BF100089AD85 /* leseven.caf */,
+				379EC61E1221BF100089AD85 /* Portugal.caf */,
+				379EC6201221BF100089AD85 /* Spain_01.caf */,
 				372045221220995D0087A1AB /* 1.caf */,
 				372045231220995D0087A1AB /* 2.caf */,
 				372045241220995D0087A1AB /* 3.caf */,
@@ -340,6 +363,11 @@
 				E284514D1221A8D300D1F9D0 /* B_14.png in Resources */,
 				E284514E1221A8D300D1F9D0 /* B_15.png in Resources */,
 				E28451651221AD6600D1F9D0 /* AA_13.png in Resources */,
+				379EC6221221BF100089AD85 /* Italy_01.caf in Resources */,
+				379EC6231221BF100089AD85 /* leeight.caf in Resources */,
+				379EC6241221BF100089AD85 /* leseven.caf in Resources */,
+				379EC6261221BF100089AD85 /* Portugal.caf in Resources */,
+				379EC6281221BF100089AD85 /* Spain_01.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
