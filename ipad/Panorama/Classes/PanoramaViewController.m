@@ -41,7 +41,8 @@
   self.scrollView = [[CylindricalScrollView alloc]
                                        initWithFrame:CGRectMake(0, 0, 1024, 768)];
   self.scrollView.imageNames = [NSArray arrayWithObjects:@"01.gif", @"02.gif", @"03.gif", @"04.gif",
-                                nil];
+                                @"05.gif", @"06.gif", @"07.gif", @"08.gif", @"09.gif", @"10.gif",
+                                @"11.gif", @"12.gif", @"13.gif", @"14.gif", @"15.gif", nil];
   self.headingLabel = [[[UILabel alloc] initWithFrame:CGRectMake(400, 0, 200, 30)] autorelease];
   self.headingLabel.text = @"Heading:";
   [self.view addSubview:self.scrollView];
