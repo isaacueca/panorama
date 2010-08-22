@@ -18,8 +18,12 @@
   UILabel *headingLabel;
   PanoramaAudioManager *audioManager;
   NSArray *scrollViews;
+  NSTimer *updateTimer;
+  double currentHeading;
+  double lastReportedHeading;
 }
 
 @property (nonatomic, retain) PanoramaAudioManager *audioManager;
+
 @end
 

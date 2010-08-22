@@ -9,13 +9,20 @@
 #import "PanoramaViewController.h"
 #import "CylindricalScrollView.h"
 
+double FRAME_RATE = 40.0;
+double EASING = 7.0;
+
 @interface PanoramaViewController ()
 
 @property(nonatomic, retain) CLLocationManager *locationManager;
 @property(nonatomic, retain) UILabel *headingLabel;
 @property(nonatomic, retain) NSArray *scrollViews;
+@property(nonatomic, retain) NSTimer *updateTimer;
+@property(nonatomic) double currentHeading;
+@property(nonatomic) double lastReportedHeading;
 
 - (void)startListening;
+- (void)updateImageViews:(NSTimer *)timer;
 
 @end
 
@@ -25,17 +32,25 @@
 @synthesize headingLabel;
 @synthesize audioManager;
 @synthesize scrollViews;
+@synthesize updateTimer;
+@synthesize currentHeading;
+@synthesize lastReportedHeading;
 
 - (void)dealloc {
   self.locationManager = nil;
   self.headingLabel = nil;
   self.audioManager = nil;
   self.scrollViews = nil;
+  self.updateTimer = nil;
   [super dealloc];
 }
 
 - (void)loadView {
   self.view = [[UIView alloc] initWithFrame:CGRectZero];
+
+  self.currentHeading = 0;
+  self.lastReportedHeading = 0;
+
   self.audioManager = [[ PanoramaAudioManager alloc ] init ];
   [ self.audioManager loadTestSounds ];
   
@@ -61,6 +76,13 @@
   self.headingLabel = [[[UILabel alloc] initWithFrame:CGRectMake(400, 0, 200, 30)] autorelease];
   self.headingLabel.text = @"Heading:";
   [self.view addSubview:self.headingLabel];
+
+  updateTimer = [[NSTimer scheduledTimerWithTimeInterval:1/FRAME_RATE
+                                                  target:self
+                                                selector:@selector(updateImageViews:)
+                                                userInfo:nil
+                                                 repeats:YES] retain];
+
   [self startListening];
   [ self.audioManager startSounds ];
 }
@@ -80,7 +102,7 @@
 	if (!self.locationManager) {
 		self.locationManager = [[[CLLocationManager alloc] init] autorelease];
 
-		//we want every move.
+		// we want every move.
 		self.locationManager.headingFilter = kCLHeadingFilterNone;
 		self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
 
@@ -90,12 +112,40 @@
 }
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateHeading:(CLHeading *)newHeading {
-  double heading = [newHeading magneticHeading];
-  self.headingLabel.text = [NSString stringWithFormat:@"Heading: %f", heading];
-  [ self.audioManager updateHeading:heading];
+  self.lastReportedHeading = [newHeading magneticHeading];
+  [ self.audioManager updateHeading:self.lastReportedHeading];
+}
+
+- (double)circularDifferenceBetween:(double)firstVal and:(double)secondVal withMax:(double)max {
+  double result = fmod(secondVal - firstVal, max);
+  if (result > max / 2.0) {
+    result -= max;
+  }
+  if (result < max / -2.0) {
+    result += 360;
+  }
+  return result;
+}
+
+- (double)circularAdd:(double)firstVal and:(double)secondVal withMax:(double)max {
+  double result = fmod(firstVal + secondVal, 360.0);
+  if (result < 0) {
+    result += max;
+  }
+  return result;
+}
+
+- (void)updateImageViews:(NSTimer *)timer {
+  double difference = [self circularDifferenceBetween:self.currentHeading
+                                                  and:self.lastReportedHeading
+                                              withMax:360.0];
   
+  self.currentHeading = [self circularAdd:self.currentHeading
+                                      and:difference / EASING
+                                  withMax:360.0];
+  self.headingLabel.text = [NSString stringWithFormat:@"Heading: %f", self.currentHeading];
   for (CylindricalScrollView *scrollView in self.scrollViews) {
-    scrollView.viewAngle = heading;
+    scrollView.viewAngle = self.currentHeading;
   }
 }
 
