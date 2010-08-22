@@ -16,6 +16,7 @@
 	BOOL	_wasInterrupted;
 	BOOL	_isPlaying;	
 	NSMutableArray *audioSources;
+	BOOL started;
 }
 // test method
 -(void)loadTestSounds;
@@ -38,4 +39,6 @@
 @property			float* listenerPos; // The coordinates of the listener
 @property			float listenerRotation; // The rotation angle of the listener in radians
 @property (nonatomic, retain)	NSMutableArray *audioSources;
+@property BOOL started;
+
 @end

@@ -22,6 +22,8 @@
 @synthesize wasInterrupted = _wasInterrupted;
 @synthesize listenerRotation = _listenerRotation;
 @synthesize audioSources;
+@synthesize started;
+
 void interruptionListener(	void *	inClientData,
 						  UInt32	inInterruptionState)
 {
@@ -102,6 +104,7 @@ void interruptionListener(	void *	inClientData,
 }
 
 -(void)startSounds {
+	started = YES;
 	[ self initOpenAL ];
 	for(PanoramaAudioSource *source in self.audioSources) {
 		[ source startSound ];

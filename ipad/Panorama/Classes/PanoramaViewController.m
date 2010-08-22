@@ -84,7 +84,6 @@ double EASING = 7.0;
                                                  repeats:YES] retain];
 
   [self startListening];
-  [ self.audioManager startSounds ];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
@@ -113,6 +112,9 @@ double EASING = 7.0;
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateHeading:(CLHeading *)newHeading {
   self.lastReportedHeading = [newHeading magneticHeading];
+  if(self.audioManager.started == NO) {
+		[ self.audioManager startSounds ];
+  }
   [ self.audioManager updateHeading:self.lastReportedHeading];
 }
 
