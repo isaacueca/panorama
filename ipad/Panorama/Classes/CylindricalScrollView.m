@@ -61,16 +61,34 @@ float SCREEN_WIDTH = 1024.0;
   [self updateImageViews];
 }
 
+- (void) createImageViewForIndex: (int) currImageIndex  {
+  UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 1024, 768)];
+  NSString *imageName = [self.imageNames objectAtIndex:currImageIndex];
+  NSLog(@"loading image %@", imageName);
+  imageView.image = [UIImage imageNamed:imageName];
+  [self.imageViews replaceObjectAtIndex:currImageIndex withObject:imageView];
+  [self addSubview:imageView];
+}
+
 - (void)updateImageViews {
   double pixelOffset = self.viewAngle * pixelsPerDegree;
 
   int currImageIndex = pixelOffset / SCREEN_WIDTH;
+  int prevImageIndex = currImageIndex - 1;
+  if (prevImageIndex < 0) {
+    prevImageIndex = [self.imageNames count] - 1;
+  }
+  int nextImageIndex = currImageIndex + 1;
+  if (nextImageIndex >= [self.imageNames count]) {
+    nextImageIndex = 0;
+  }
 
   // Remove any image views we're not using
   NSUInteger i, count = [self.imageViews count];
   for (i = 0; i < count; i++) {
     UIImageView *imageView = [self.imageViews objectAtIndex:i];
-    if ((id)imageView == [NSNull null] || i == currImageIndex) {
+    if ((id)imageView == [NSNull null] ||
+        i == currImageIndex || i == prevImageIndex || i == nextImageIndex) {
       continue;
     }
     [imageView removeFromSuperview];
@@ -80,14 +98,37 @@ float SCREEN_WIDTH = 1024.0;
   // TODO(scotty): Recycle image views
 
   // Add any images we need
-  if ([self.imageViews objectAtIndex:currImageIndex] == [NSNull null]) {
-    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 1024, 768)];
-    NSString *imageName = [self.imageNames objectAtIndex:currImageIndex];
-    NSLog(@"loading image %@", imageName);
-    imageView.image = [UIImage imageNamed:imageName];
-    [self.imageViews replaceObjectAtIndex:currImageIndex withObject:imageView];
-    [self addSubview:imageView];
+  if ([self.imageViews objectAtIndex:prevImageIndex] == [NSNull null]) {
+    [self createImageViewForIndex:prevImageIndex];
   }
+
+  if ([self.imageViews objectAtIndex:currImageIndex] == [NSNull null]) {
+    [self createImageViewForIndex: currImageIndex];
+  }
+
+  if ([self.imageViews objectAtIndex:nextImageIndex] == [NSNull null]) {
+    [self createImageViewForIndex:nextImageIndex];
+  }
+
+  // Set the image offsets
+  UIImageView *prevImageView = [self.imageViews objectAtIndex:prevImageIndex];
+  CGRect frame = prevImageView.frame;
+  frame.origin.x = prevImageIndex * SCREEN_WIDTH - pixelOffset;
+  prevImageView.frame = frame;
+
+  UIImageView *middleImageView = [self.imageViews objectAtIndex:currImageIndex];
+  frame = middleImageView.frame;
+  frame.origin.x = currImageIndex * SCREEN_WIDTH - pixelOffset;
+  middleImageView.frame = frame;
+
+  UIImageView *nextImageView = [self.imageViews objectAtIndex:nextImageIndex];
+  frame = nextImageView.frame;
+  if (nextImageIndex == 0 && [self.imageNames count] * SCREEN_WIDTH - pixelOffset < pixelOffset) {
+    frame.origin.x = [self.imageNames count] * SCREEN_WIDTH - pixelOffset;
+  } else {
+    frame.origin.x = nextImageIndex * SCREEN_WIDTH - pixelOffset;
+  }
+  nextImageView.frame = frame;
 }
 
 @end
