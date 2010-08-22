@@ -151,9 +151,18 @@ void interruptionListener(	void *	inClientData,
 }
 
 -(void)updateHeading:(float)angle {
+	float radians = angle*M_PI/180.0f;
+	[ self setListenerRotation:radians];
+	float x = cos(radians);
+	float y = sin(radians);
 	
+	for(PanoramaAudioSource *source in self.audioSources) {
+		// This currently works because everything is at a unit radius
+		float dotProduct = x*source.sourcePos[0] + y*source.sourcePos[1];
+		float volume = 0.5*(dotProduct + 1.0f);
+		source.volume = (volume * volume * volume * volume);
+	}
 }
-
 
 #pragma mark position update
 - (float*)listenerPos{
@@ -164,7 +173,6 @@ void interruptionListener(	void *	inClientData,
 	int i;
 	for (i=0; i<3; i++)
 		_listenerPos[i] = LISTENERPOS[i];
-	
 	// Move our listener coordinates
 	alListenerfv(AL_POSITION, _listenerPos);
 }

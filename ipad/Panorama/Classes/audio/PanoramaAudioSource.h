@@ -12,6 +12,7 @@
 
 @interface PanoramaAudioSource : NSObject {
 	float	angle;
+	float   volume;
 	ALuint	_source;
 	ALuint	_buffer;
 	void	*_data;
@@ -30,5 +31,5 @@
 @property float	angle;
 @property (nonatomic, retain) NSString *fileName;
 @property (nonatomic, retain) NSString *extension;
-
+@property float volume;
 @end

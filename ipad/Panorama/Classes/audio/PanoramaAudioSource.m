@@ -15,12 +15,14 @@
 @synthesize sourceVolume;
 @synthesize fileName, extension;
 @synthesize angle;
+@synthesize volume;
 
 -(void)dealloc {
 	[ fileName release ], fileName = nil;
 	[ extension release ], extension = nil;
 	[ super dealloc ];
 }
+
 - (void) initBuffer {
 	ALenum  error = AL_NO_ERROR;
 	ALenum  format;
@@ -138,5 +140,10 @@
 	self.sourcePos[0] = kAudioSourceRadius*cos(angle);
 	self.sourcePos[1] = kAudioSourceRadius*sin(angle);
 	self.sourcePos[2] = 0.0f;
+}
+
+-(void)setVolume:(float)_volume {
+//	NSLog(@"setting gain to %2.2f", _volume);
+	alSourcef(_source, AL_GAIN, _volume);
 }
 @end
