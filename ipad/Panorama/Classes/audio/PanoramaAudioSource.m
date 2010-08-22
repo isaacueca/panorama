@@ -67,7 +67,7 @@
 	alSourcefv(_source, AL_POSITION, _sourcePos);
 	
 	// Set Source Reference Distance
-	alSourcef(_source, AL_REFERENCE_DISTANCE, 0.15f);
+	alSourcef(_source, AL_REFERENCE_DISTANCE, 1.0f);
 	
 	// attach OpenAL Buffer to OpenAL Source
 	alSourcei(_source, AL_BUFFER, _buffer);

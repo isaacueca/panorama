@@ -69,6 +69,7 @@ float SCREEN_WIDTH = 1024.0;
   imageView.opaque = NO;
   [self.imageViews replaceObjectAtIndex:currImageIndex withObject:imageView];
   [self addSubview:imageView];
+  [ imageView release ];
 }
 
 - (void)updateImageViews {
