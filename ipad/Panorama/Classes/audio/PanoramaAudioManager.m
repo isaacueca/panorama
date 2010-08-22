@@ -49,15 +49,36 @@ void interruptionListener(	void *	inClientData,
 		}
 	}
 }
+
 #pragma mark init and dealloc
+
 -(id)init {
-	if(self = [ super init ]) {
+	if (self = [super init]) {
+		// initial position of the sound source and 
+		// initial position and rotation of the listener
+		// will be set by the view
 		self.audioSources = [ NSMutableArray array ];
-		[ self initOpenAL ];
+		
+		// setup our audio session
+		OSStatus result = AudioSessionInitialize(NULL, NULL, interruptionListener, self);
+		if (result) printf("Error initializing audio session! %d\n", (int)result);
+		else {
+			UInt32 category = kAudioSessionCategory_AmbientSound;
+			result = AudioSessionSetProperty(kAudioSessionProperty_AudioCategory, sizeof(category), &category);
+			if (result) printf("Error setting audio session category! %d\n", (int)result);
+			else {
+				result = AudioSessionSetActive(true);
+				if (result) printf("Error setting audio session active! %d\n", (int)result);
+			}
+		}
+		
+		_wasInterrupted = NO;
+		
+		// Initialize our OpenAL environment
+		[self initOpenAL];
 	}
 	return self;
 }
-
 -(void)dealloc {
 	[ audioSources release ], audioSources = nil;
 	[ super dealloc ];
