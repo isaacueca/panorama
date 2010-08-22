@@ -17,7 +17,7 @@
   CLLocationManager *locationManager;
   UILabel *headingLabel;
   PanoramaAudioManager *audioManager;
-  CylindricalScrollView *scrollView;
+  NSArray *scrollViews;
 }
 
 @property (nonatomic, retain) PanoramaAudioManager *audioManager;
