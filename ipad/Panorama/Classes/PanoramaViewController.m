@@ -56,18 +56,20 @@ double EASING = 5.0;
   
   CylindricalScrollView *scrollView = [[[CylindricalScrollView alloc]
                                         initWithFrame:CGRectMake(0, 0, 1024, 768)] autorelease];
-  scrollView.imageNames = [NSArray arrayWithObjects:@"01.gif", @"02.gif", @"03.gif", @"04.gif",
-                                @"05.gif", @"06.gif", @"07.gif", @"08.gif", @"09.gif", @"10.gif",
-                                @"11.gif", @"12.gif", nil];
+  scrollView.imageNames = [NSArray arrayWithObjects:@"AA_01.png", @"AA_02.png", @"AA_03.png",
+                           @"AA_04.png", @"AA_05.png", @"AA_06.png", @"AA_07.png", @"AA_08.png",
+                           @"AA_09.png", @"AA_10.png", @"AA_11.png", @"AA_12.png", nil];
+
   scrollView.opaque = NO;
   [self.view addSubview:scrollView];
   
   CylindricalScrollView *scrollView2 = [[[CylindricalScrollView alloc]
                                          initWithFrame:CGRectMake(0, 0, 1024, 768)] autorelease];
-  scrollView2.imageNames = [NSArray arrayWithObjects:@"A_01.png", @"A_02.png", @"A_03.png",
-                            @"A_04.png", @"A_05.png", @"A_06.png", @"A_07.png", @"A_08.png",
-                            @"A_09.png", @"A_10.png", @"A_11.png", @"A_12.png", @"A_13.png",
-                            @"A_14.png", @"A_15.png", nil];
+  scrollView2.imageNames = [NSArray arrayWithObjects:@"B_01.png", @"B_02.png", @"B_03.png",
+                            @"B_04.png", @"B_05.png", @"B_06.png", @"B_07.png", @"B_08.png",
+                            @"B_09.png", @"B_10.png", @"B_11.png", @"B_12.png", @"B_13.png",
+                            @"B_14.png", @"B_15.png", nil];
+
   scrollView2.opaque = NO;
   [self.view addSubview:scrollView2];
   
