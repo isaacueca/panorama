@@ -43,28 +43,20 @@
                                         initWithFrame:CGRectMake(0, 0, 1024, 768)] autorelease];
   scrollView.imageNames = [NSArray arrayWithObjects:@"01.gif", @"02.gif", @"03.gif", @"04.gif",
                                 @"05.gif", @"06.gif", @"07.gif", @"08.gif", @"09.gif", @"10.gif",
-                                @"11.gif", @"12.gif", @"13.gif", @"14.gif", @"15.gif", nil];
+                                @"11.gif", @"12.gif", nil];
   scrollView.opaque = NO;
   [self.view addSubview:scrollView];
-  self.scrollViews = [NSArray arrayWithObjects:scrollView, nil];
   
-  scrollView = [[[CylindricalScrollView alloc]
-                 initWithFrame:CGRectMake(0, 0, 1024, 768)] autorelease];
-  scrollView.imageNames = [NSArray arrayWithObjects:@"01.gif", @"02.gif", @"03.gif", @"04.gif",
-                           @"05.gif", @"06.gif", @"07.gif", @"08.gif", @"09.gif", @"10.gif",
-                           @"11.gif", @"12.gif", @"13.gif", @"14.gif", @"15.gif", nil];
-  scrollView.opaque = NO;
-  [self.view addSubview:scrollView];
-  self.scrollViews = [NSArray arrayWithObjects:scrollView, nil];
+  CylindricalScrollView *scrollView2 = [[[CylindricalScrollView alloc]
+                                         initWithFrame:CGRectMake(0, 0, 1024, 768)] autorelease];
+  scrollView2.imageNames = [NSArray arrayWithObjects:@"A_01.png", @"A_02.png", @"A_03.png",
+                            @"A_04.png", @"A_05.png", @"A_06.png", @"A_07.png", @"A_08.png",
+                            @"A_09.png", @"A_10.png", @"A_11.png", @"A_12.png", @"A_13.png",
+                            @"A_14.png", @"A_15.png", nil];
+  scrollView2.opaque = NO;
+  [self.view addSubview:scrollView2];
   
-  scrollView = [[[CylindricalScrollView alloc]
-                 initWithFrame:CGRectMake(0, 0, 1024, 768)] autorelease];
-  scrollView.imageNames = [NSArray arrayWithObjects:@"01.gif", @"02.gif", @"03.gif", @"04.gif",
-                           @"05.gif", @"06.gif", @"07.gif", @"08.gif", @"09.gif", @"10.gif",
-                           @"11.gif", @"12.gif", @"13.gif", @"14.gif", @"15.gif", nil];
-  scrollView.opaque = NO;
-  [self.view addSubview:scrollView];
-  self.scrollViews = [NSArray arrayWithObjects:scrollView, nil];
+  self.scrollViews = [NSArray arrayWithObjects:scrollView, scrollView2, nil];
   
   self.headingLabel = [[[UILabel alloc] initWithFrame:CGRectMake(400, 0, 200, 30)] autorelease];
   self.headingLabel.text = @"Heading:";
