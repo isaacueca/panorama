@@ -59,7 +59,8 @@ double EASING = 5.0;
                                         initWithFrame:CGRectMake(0, 0, 1024, 768)] autorelease];
   scrollView.imageNames = [NSArray arrayWithObjects:@"AA_01.png", @"AA_02.png", @"AA_03.png",
                            @"AA_04.png", @"AA_05.png", @"AA_06.png", @"AA_07.png", @"AA_08.png",
-                           @"AA_09.png", @"AA_10.png", @"AA_11.png", @"AA_12.png", nil];
+                           @"AA_09.png", @"AA_10.png", @"AA_11.png", @"AA_12.png", @"AA_13.png",
+                           nil];
 
   scrollView.opaque = NO;
   [self.view addSubview:scrollView];
