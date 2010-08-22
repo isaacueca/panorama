@@ -8,21 +8,27 @@
 
 #import "PanoramaAppDelegate.h"
 #import "PanoramaViewController.h"
-#import "UIApplication+ScreenMirroring.h"
+
+@interface PanoramaAppDelegate ()
+
+- (void)setupExternalScreen;
+
+@end
 
 @implementation PanoramaAppDelegate
 
 @synthesize window;
 @synthesize viewController;
+@synthesize usingExternalScreen;
 
 
 #pragma mark -
 #pragma mark Application lifecycle
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
+  [self setupExternalScreen];
   [window addSubview:viewController.view];
   [window makeKeyAndVisible];
-  [[UIApplication sharedApplication] setupScreenMirroring];
 
   return YES;
 }
@@ -40,6 +46,41 @@
     [viewController release];
     [window release];
     [super dealloc];
+}
+
+- (void)setupExternalScreen {
+  self.usingExternalScreen = NO;
+  NSArray *connectedScreens = [UIScreen screens];
+  if ([connectedScreens count] > 1) {
+    UIScreen *mainScreen = [UIScreen mainScreen];
+    for (UIScreen *screen in connectedScreens) {
+      BOOL done = NO;
+      UIScreenMode *mainScreenMode = [UIScreen mainScreen].currentMode;
+      if (screen != mainScreen) {
+        for (UIScreenMode *externalScreenMode in screen.availableModes) {
+          if (CGSizeEqualToSize(externalScreenMode.size, mainScreenMode.size)) {
+            // Select a screen that matches the main screen
+            screen.currentMode = externalScreenMode;
+            done = YES;
+            break;
+          }
+        }
+
+        if (!done && [screen.availableModes count]) {
+          screen.currentMode = [screen.availableModes objectAtIndex:0];
+        }
+
+        [window release];
+        window = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, 1024, 768)];
+        window.opaque = YES;
+        window.hidden = NO;
+        window.backgroundColor = [UIColor blackColor];
+        //window.layer.contentsGravity = kCAGravityResizeAspect;
+        window.screen = screen;
+      }
+    }
+    self.usingExternalScreen = YES;
+  }
 }
 
 @end

@@ -8,6 +8,7 @@
 
 #import "PanoramaViewController.h"
 #import "CylindricalScrollView.h"
+#import "PanoramaAppDelegate.h"
 
 double FRAME_RATE = 30.0;
 double EASING = 5.0;
@@ -89,8 +90,14 @@ double EASING = 5.0;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+  PanoramaAppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+  if (appDelegate.usingExternalScreen) {
+    return (interfaceOrientation == UIInterfaceOrientationPortrait ||
+            interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown);
+  } else {
     return (interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
             interfaceOrientation == UIInterfaceOrientationLandscapeRight);
+  }
 }
 
 - (void)didReceiveMemoryWarning {

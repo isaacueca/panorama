@@ -11,12 +11,14 @@
 @class PanoramaViewController;
 
 @interface PanoramaAppDelegate : NSObject <UIApplicationDelegate> {
-    UIWindow *window;
-    PanoramaViewController *viewController;
+  UIWindow *window;
+  PanoramaViewController *viewController;
+  BOOL usingExternalScreen;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic, retain) IBOutlet PanoramaViewController *viewController;
+@property (nonatomic) BOOL usingExternalScreen;
 
 @end
 
