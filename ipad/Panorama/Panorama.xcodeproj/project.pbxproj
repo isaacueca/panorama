@@ -241,10 +241,10 @@
 			isa = PBXGroup;
 			children = (
 				372045001220944B0087A1AB /* OpenALSupport.h */,
-				3720440312207F010087A1AB /* PanoramaAudioManager.h */,
-				3720440412207F010087A1AB /* PanoramaAudioManager.m */,
 				3720440512207F010087A1AB /* PanoramaAudioSource.h */,
 				3720440612207F010087A1AB /* PanoramaAudioSource.m */,
+				3720440312207F010087A1AB /* PanoramaAudioManager.h */,
+				3720440412207F010087A1AB /* PanoramaAudioManager.m */,
 			);
 			name = audio;
 			sourceTree = "<group>";
