@@ -76,6 +76,9 @@ void interruptionListener(	void *	inClientData,
 		
 		// Initialize our OpenAL environment
 		[self initOpenAL];
+		self.listenerPos[0] = 0.0f;
+		self.listenerPos[1] = 0.0f;
+		self.listenerPos[2] = 0.0f;
 	}
 	return self;
 }
@@ -127,10 +130,6 @@ void interruptionListener(	void *	inClientData,
 
 -(void)startSounds {
 	started = YES;
-//	[ self initOpenAL ];
-//	for(PanoramaAudioSource *source in self.audioSources) {
-//		[ source startSound ];
-//	}
 }
 
 - (void)teardownOpenAL {
@@ -150,7 +149,8 @@ void interruptionListener(	void *	inClientData,
 
 -(void)stopSounds {
 	for(PanoramaAudioSource *source in self.audioSources) {
-		[ source stopSound ];
+		if(source.isStarted)
+			[ source stopSound ];
 	}
 }
 
@@ -166,13 +166,13 @@ void interruptionListener(	void *	inClientData,
 
 - (void)setListenerRotation:(float)radians {
 	_listenerRotation = radians;
-	float ori[] = {0., cos(radians), sin(radians), 1., 0., 0.};
+	float ori[] = {cos(radians), sin(radians), 1.0f, 0.0f, 0., 1.0f};
 	// Set our listener orientation (rotation)
 	alListenerfv(AL_ORIENTATION, ori);
 }
 
 -(void)updateHeading:(float)angle {
-	float radians = angle*M_PI/180.0f;
+	float radians = -angle*M_PI/180.0f;
 	[ self setListenerRotation:radians];
 	float x = cos(radians);
 	float y = sin(radians);

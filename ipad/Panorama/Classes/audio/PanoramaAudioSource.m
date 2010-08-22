@@ -139,7 +139,7 @@
 }
 
 -(void)setAngle:(float)_angle {
-	angle = _angle*M_PI/180.0f;
+	angle = -_angle*M_PI/180.0f;
 	
 	self.sourcePos[0] = kAudioSourceRadius*cos(angle);
 	self.sourcePos[1] = kAudioSourceRadius*sin(angle);
